@@ -699,6 +699,11 @@
     <bool name="config_dozeAlwaysOnDisplayAvailable">false</bool>
     <bool name="config_dozePulsePickup">true</bool>
     <bool name="config_displayBlanksAfterDoze">true</bool>
+    <bool name="config_supportDoubleTapWake">true</bool>
+    <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
+    <bool name="config_powerDecoupleInteractiveModeFromDisplay">true</bool>
+    <bool name="config_enableAutoPowerModes">true</bool>
+    <integer name="config_dozeWakeLockScreenDebounce">1500</integer>
     <bool name="config_enableBurnInProtection">true</bool>
 
     <bool name="config_setColorTransformAccelerated">true</bool>
@@ -728,7 +733,7 @@
     <string name="db_default_sync_mode">OFF</string>
     <string name="db_wal_sync_mode">OFF</string>
 
-    <bool name="config_suspendWhenScreenOffDueToProximity">true</bool>
+    <bool name="config_suspendWhenScreenOffDueToProximity">false</bool>
 
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
         <item>"/system/framework/arm64/boot-framework.oat"</item>
