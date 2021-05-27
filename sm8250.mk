@@ -9,7 +9,8 @@ TARGET_COPY_OUT_VENDOR_OVERLAY ?= $(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PL
 
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(COMMON_PATH)
+    $(COMMON_PATH) \
+    hardware/samsung
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -47,9 +48,13 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/audio_policy_configuration.xml
 
+PRODUCT_PACKAGES += \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.service
+
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.samsung-sm8250
+    android.hardware.biometrics.fingerprint@2.1-service.samsung \
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -63,14 +68,14 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.samsung-sm8250
+    android.hardware.power@1.3-service.samsung-libperfmgr
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/powerhint.json
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl.samsung-sm8250
+    android.hardware.sensors@2.1-service.samsung-multihal
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \

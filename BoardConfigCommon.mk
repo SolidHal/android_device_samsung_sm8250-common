@@ -35,7 +35,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 # Image
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_BASE := 0x00000000
-BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 printk.devkmsg=on firmware_class.path=/vendor/firmware_mnt/image
+BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 printk.devkmsg=on firmware_class.path=/vendor/firmware_mnt/image androidboot.selinux=permissive
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_OFFSET := 0x00008000
 BOARD_KERNEL_PAGESIZE := 4096
@@ -66,8 +66,14 @@ BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := \
 
 # File System
 TARGET_COPY_OUT_VENDOR := vendor
-TARGET_COPY_OUT_ODM := odm
-BOARD_PREBUILT_ODMIMAGE := true
+
+# SYSTEM_EXT
+BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_SYSTEM_EXT := system_ext
+
+# TODO: do we need this? I don't believe we actually build the odm.img
+# TARGET_COPY_OUT_ODM := odm
+# BOARD_PREBUILT_ODMIMAGE := true
 TARGET_COPY_OUT_PRODUCT := system/product
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 TARGET_USERIMAGES_USE_EXT4 := true
@@ -89,6 +95,10 @@ BOARD_AVB_ENABLE := true
 BOARD_AVB_ROLLBACK_INDEX := 0
 # HASHTREE_DISABLED | VERIFICATION_DISABLED
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
+BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA4096
+BOARD_AVB_RECOVERY_ROLLBACK_INDEX := $(BOARD_AVB_ROLLBACK_INDEX)
+BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
+BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
 
 # Recovery
 BOARD_HAS_DOWNLOAD_MODE := true
@@ -120,24 +130,40 @@ TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
 # SELinux
+
+# BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
+#     device/qcom/sepolicy/generic/public \
+#     device/qcom/sepolicy/qva/public \
+#     device/samsung_slsi/sepolicy/common/public \
+#     $(COMMON_PATH)/sepolicy/platform/public
+
+# BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+#     device/qcom/sepolicy/generic/private \
+#     device/qcom/sepolicy/qva/private \
+#     device/samsung_slsi/sepolicy/common/private \
+#     $(COMMON_PATH)/sepolicy/platform/private
+
+# PRODUCT_PUBLIC_SEPOLICY_DIRS += \
+#     device/qcom/sepolicy/product/public \
+#     $(COMMON_PATH)/sepolicy/public
+
+# PRODUCT_PRIVATE_SEPOLICY_DIRS += \
+#     device/qcom/sepolicy/product/private \
+#     $(COMMON_PATH)/sepolicy/private
+
+-include device/qcom/sepolicy/SEPolicy.mk
+-include device/samsung_slsi/SEPolicy.mk
+
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/public \
-    device/qcom/sepolicy/qva/public \
-    device/samsung_slsi/sepolicy/common/public \
     $(COMMON_PATH)/sepolicy/platform/public
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/private \
-    device/qcom/sepolicy/qva/private \
-    device/samsung_slsi/sepolicy/common/private \
     $(COMMON_PATH)/sepolicy/platform/private
 
 PRODUCT_PUBLIC_SEPOLICY_DIRS += \
-    device/qcom/sepolicy/product/public \
     $(COMMON_PATH)/sepolicy/public
 
 PRODUCT_PRIVATE_SEPOLICY_DIRS += \
-    device/qcom/sepolicy/product/private \
     $(COMMON_PATH)/sepolicy/private
 
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
