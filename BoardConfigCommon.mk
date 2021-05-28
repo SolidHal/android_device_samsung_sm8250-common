@@ -63,18 +63,25 @@ BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 8320446464
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     system
+    product
+    system_ext
 
-# File System
+# VENDOR -- we keep this from the stock image for now
 TARGET_COPY_OUT_VENDOR := vendor
 
 # SYSTEM_EXT
 BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 
-# TODO: do we need this? I don't believe we actually build the odm.img
+
+### PRODUCT
+BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
+TARGET_COPY_OUT_PRODUCT := product
+
+# we get odm from the stock image for now
 # TARGET_COPY_OUT_ODM := odm
 # BOARD_PREBUILT_ODMIMAGE := true
-TARGET_COPY_OUT_PRODUCT := system/product
+
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
@@ -112,6 +119,12 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
 
+### GRAPHICS
+# hardware/interfaces/configstore/1.1/default/surfaceflinger.mk
+NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
+TARGET_HAS_HDR_DISPLAY := true
+TARGET_HAS_WIDE_COLOR_DISPLAY := true
+
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
@@ -129,30 +142,9 @@ TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
-# SELinux
 
-# BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-#     device/qcom/sepolicy/generic/public \
-#     device/qcom/sepolicy/qva/public \
-#     device/samsung_slsi/sepolicy/common/public \
-#     $(COMMON_PATH)/sepolicy/platform/public
-
-# BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-#     device/qcom/sepolicy/generic/private \
-#     device/qcom/sepolicy/qva/private \
-#     device/samsung_slsi/sepolicy/common/private \
-#     $(COMMON_PATH)/sepolicy/platform/private
-
-# PRODUCT_PUBLIC_SEPOLICY_DIRS += \
-#     device/qcom/sepolicy/product/public \
-#     $(COMMON_PATH)/sepolicy/public
-
-# PRODUCT_PRIVATE_SEPOLICY_DIRS += \
-#     device/qcom/sepolicy/product/private \
-#     $(COMMON_PATH)/sepolicy/private
-
--include device/qcom/sepolicy/SEPolicy.mk
--include device/samsung_slsi/SEPolicy.mk
+include device/qcom/sepolicy/SEPolicy.mk
+include device/samsung_slsi/SEPolicy.mk
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     $(COMMON_PATH)/sepolicy/platform/public

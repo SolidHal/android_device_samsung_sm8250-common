@@ -10,7 +10,8 @@ TARGET_COPY_OUT_VENDOR_OVERLAY ?= $(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/$(PL
 # Soong Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH) \
-    hardware/samsung
+    hardware/google/pixel \
+    hardware/samsung/hidl/power-libperfmgr
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
