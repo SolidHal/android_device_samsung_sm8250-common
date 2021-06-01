@@ -110,7 +110,7 @@ BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
 # Recovery
 BOARD_HAS_DOWNLOAD_MODE := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/config/init/fstab.qcom
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 
 # APEX

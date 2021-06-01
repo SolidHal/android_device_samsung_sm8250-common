@@ -47,7 +47,7 @@ PRODUCT_COPY_FILES += \
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/audio_policy_configuration.xml
+    $(COMMON_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/audio_policy_configuration.xml
 
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
@@ -65,14 +65,14 @@ PRODUCT_PACKAGES += \
     Tag
 
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/libnfc-nci.conf:system/etc/libnfc-nci.conf
+    $(COMMON_PATH)/configs/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf
 
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.samsung-libperfmgr
 
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/powerhint.json
+    $(COMMON_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/powerhint.json
 
 # Sensors
 PRODUCT_PACKAGES += \
