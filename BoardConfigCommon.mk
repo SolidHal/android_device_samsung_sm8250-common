@@ -1,4 +1,5 @@
 COMMON_PATH := device/samsung/sm8250-common
+CONFIG_PATH := device/samsung/sm8250-common/config
 
 # Platform
 BOARD_VENDOR := samsung
@@ -62,9 +63,9 @@ BOARD_SUPER_PARTITION_SIZE := 8320450560
 BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 8320446464
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := \
-    system
-    product
-    system_ext
+    system \
+    product \
+    system_ext \
 
 # VENDOR -- we keep this from the stock image for now
 TARGET_COPY_OUT_VENDOR := vendor
@@ -82,7 +83,7 @@ TARGET_COPY_OUT_PRODUCT := product
 # TARGET_COPY_OUT_ODM := odm
 # BOARD_PREBUILT_ODMIMAGE := true
 
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(CONFIG_PATH)/fs/config.fs
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -144,7 +145,8 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
 
 include device/qcom/sepolicy/SEPolicy.mk
-include device/samsung_slsi/SEPolicy.mk
+include device/lineage/sepolicy/qcom/sepolicy.mk
+include device/samsung_slsi/sepolicy/sepolicy.mk
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
     $(COMMON_PATH)/sepolicy/platform/public
