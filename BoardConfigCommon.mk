@@ -63,15 +63,13 @@ BOARD_SUPER_PARTITION_SIZE := 8320450560
 BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 8320446464
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := \
-    system \
-    product
+    system
 
 # VENDOR -- we keep this from the stock image for now
 TARGET_COPY_OUT_VENDOR := vendor
 
 ### PRODUCT
-BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
-TARGET_COPY_OUT_PRODUCT := product
+TARGET_COPY_OUT_PRODUCT := system/product
 
 # we get odm from the stock image for now
 # TARGET_COPY_OUT_ODM := odm
@@ -113,12 +111,6 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Audio
 USE_XML_AUDIO_POLICY_CONF := 1
-
-### GRAPHICS
-# hardware/interfaces/configstore/1.1/default/surfaceflinger.mk
-NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
-TARGET_HAS_HDR_DISPLAY := true
-TARGET_HAS_WIDE_COLOR_DISPLAY := true
 
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true

@@ -36,6 +36,88 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/skip_mount.cfg:system/etc/init/config/skip_mount.cfg
 
+# HIDL
+
+PRODUCT_PACKAGES += \
+   libhidltransport \
+   libhidltransport.vendor \
+   libhwbinder \
+   libhwbinder.vendor
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/vendor_override_manifest.xml:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/vintf/manifest/vendor_override_manifest.xml
+
+
+# Audio
+PRODUCT_COPY_FILES += \
+    $(CONFIG_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/audio_policy_configuration.xml
+
+PRODUCT_PACKAGES += \
+    android.hardware.audio@6.0-impl \
+    android.hardware.audio.service
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.samsung \
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.samsung
+
+### LIGHT
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.samsung
+
+### LIVEDISPLAY
+PRODUCT_PACKAGES+= \
+    vendor.lineage.livedisplay@2.0-service.samsung-exynos
+
+# NFC
+PRODUCT_PACKAGES += \
+    libnfc-nci \
+    libnfc_nci_jni \
+    NfcNci \
+    Tag
+
+PRODUCT_COPY_FILES += \
+    $(CONFIG_PATH)/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.3-service.samsung-libperfmgr
+
+PRODUCT_COPY_FILES += \
+    $(CONFIG_PATH)/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/powerhint.json
+
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.1-service.samsung-multihal
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
+    frameworks/native/data/etc/android.hardware.sensor.hifi_sensors.xml:system/etc/permissions/android.hardware.sensor.hifi_sensors.xml
+
+### SOUNDTRIGGER
+PRODUCT_PACKAGES += \
+    android.hardware.soundtrigger@2.0-impl
+
+### THERMAL
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.samsung
+
+### TOUCH HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.samsung
+
+### USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb@1.1-service.typec
+
+### USB TRUST HAL
+PRODUCT_PACKAGES += \
+    vendor.lineage.trust@1.0-service
+
+### VIBRATOR
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator@1.3-service.samsung
+
 # Vendor Services - DISABLED
 PRODUCT_COPY_FILES += \
     $(CONFIG_PATH)/etc/empty:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/init/init.vendor.qti.spu@1.0-service.rc \

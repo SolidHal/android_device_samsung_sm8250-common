@@ -38,15 +38,6 @@
         <fqname>@1.0::IBluetoothHci/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.bluetooth.audio</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IBluetoothAudioProvidersFactory</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.camera.provider</name>
         <transport>hwbinder</transport>
         <version>2.6</version>
@@ -268,42 +259,6 @@
         <version>1.0</version>
         <interface>
             <name>IFingerprintInscreen</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lineage.touch</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IGloveMode</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lineage.livedisplay</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <!-- FIXME
-        <interface>
-            <name>IAdaptiveBacklight</name>
-            <instance>default</instance>
-        </interface>
-        -->
-        <interface>
-            <name>IDisplayColorCalibration</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IDisplayModes</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IReadingEnhancement</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>ISunlightEnhancement</name>
             <instance>default</instance>
         </interface>
     </hal>
