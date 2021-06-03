@@ -64,16 +64,10 @@ BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 8320446464
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := \
     system \
-    product \
-    system_ext \
+    product
 
 # VENDOR -- we keep this from the stock image for now
 TARGET_COPY_OUT_VENDOR := vendor
-
-# SYSTEM_EXT
-BOARD_SYSTEM_EXTIMAGE_FILE_SYSTEM_TYPE := ext4
-TARGET_COPY_OUT_SYSTEM_EXT := system_ext
-
 
 ### PRODUCT
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
@@ -143,15 +137,14 @@ TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
-
 include device/qcom/sepolicy/SEPolicy.mk
-include device/lineage/sepolicy/qcom/sepolicy.mk
-include device/samsung_slsi/sepolicy/sepolicy.mk
 
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
+    device/samsung_slsi/sepolicy/common/public \
     $(COMMON_PATH)/sepolicy/platform/public
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+    device/samsung_slsi/sepolicy/common/private \
     $(COMMON_PATH)/sepolicy/platform/private
 
 PRODUCT_PUBLIC_SEPOLICY_DIRS += \
