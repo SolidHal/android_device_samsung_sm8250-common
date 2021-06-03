@@ -32,9 +32,6 @@ PRODUCT_PACKAGES += \
     r-gsi.avbpubkey \
     s-gsi.avbpubkey
 
-# Skip Mount
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/skip_mount.cfg:system/etc/init/config/skip_mount.cfg
 
 # HIDL
 
@@ -56,10 +53,29 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.audio.service
 
+# Camera
+PRODUCT_PACKAGES += \
+    Snap
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(COMMON_PATH)/overlay-lineage/packages/apps/Snap
+
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.samsung \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.samsung
+
+
+PRODUCT_COPY_FILES += \
+    vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
+
+# Init Resources
+PRODUCT_PACKAGES += \
+    init.qcom.rc \
+    fstab.qcom \
+    gsi_skip_mount.cfg
+
+# # Skip Mount
+# PRODUCT_COPY_FILES += \
+#     $(COMMON_PATH)/skip_mount.cfg:system/etc/init/config/skip_mount.cfg
 
 ### LIGHT
 PRODUCT_PACKAGES += \
@@ -85,6 +101,11 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(CONFIG_PATH)/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/powerhint.json
+
+# Recovery
+PRODUCT_PACKAGES += \
+    init.recovery.qcom.rc \
+    fastbootd
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -141,7 +162,10 @@ PRODUCT_COPY_FILES += \
     $(CONFIG_PATH)/etc/excluded_hardware.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/excluded_hardware.xml
 
 # Platform packages and permission
-include $(COMMON_PATH)/platform/*.mk
+include $(COMMON_PATH)/platform/init.mk
+include $(COMMON_PATH)/platform/permissions.mk
+include $(COMMON_PATH)/platform/product_packages.mk
+include $(COMMON_PATH)/platform/recovery.mk
 
 # Properties
 include $(COMMON_PATH)/vendor_prop.mk

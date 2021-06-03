@@ -12,11 +12,17 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+
+
+COMMON_PATH := device/samsung/sm8250-common
+CONFIG_PATH := $(COMMON_PATH)/config
+
 ### PERMISSIONS
 # Audio
 PRODUCT_COPY_FILES += \
     $(CONFIG_PATH)/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/audio_policy_configuration.xml
 
+#fingerprint
 PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 

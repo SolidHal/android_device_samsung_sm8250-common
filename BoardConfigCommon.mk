@@ -70,6 +70,7 @@ TARGET_COPY_OUT_VENDOR := vendor
 
 ### PRODUCT
 TARGET_COPY_OUT_PRODUCT := system/product
+# TARGET_COPY_OUT_SYSTEM_EXT := system/system_ext
 
 # we get odm from the stock image for now
 # TARGET_COPY_OUT_ODM := odm

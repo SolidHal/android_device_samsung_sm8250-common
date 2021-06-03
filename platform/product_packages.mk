@@ -1,3 +1,7 @@
+
+COMMON_PATH := device/samsung/sm8250-common
+CONFIG_PATH := $(COMMON_PATH)/config
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
