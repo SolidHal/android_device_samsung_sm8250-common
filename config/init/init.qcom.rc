@@ -18,7 +18,7 @@ on post-fs-data
     restorecon_recursive /carrier
 
 on early-boot
-    mount none /system/lib64/vendor.lineage.biometrics.fingerprint.inscreen@1.0.so /vendor/lib64/vendor.lineage.biometrics.fingerprint.inscreen@1.0.so bind
+    mount none /system/system_ext/lib64/vendor.lineage.biometrics.fingerprint.inscreen@1.0.so /vendor/lib64/vendor.lineage.biometrics.fingerprint.inscreen@1.0.so bind
     mount none /system/lib64/libperfmgr.so /vendor/lib64/libperfmgr.so bind
 
 on boot
