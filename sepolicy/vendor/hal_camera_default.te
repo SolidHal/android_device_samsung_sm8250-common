@@ -1,17 +1,8 @@
 type vendor_xdsp_device, dev_type;
+type vendor_debugfs_ipc, debugfs_type, fs_type;
 
-allow hal_camera_default vendor_xdsp_device:chr_file {ioctl read write open};
-
-type rebootescrow_prop, property_type, extended_core_property_type;
-
-allow hal_camera_default pm_prop:file {map};
-allow hal_camera_default powerctl_prop:file {map getattr};
-allow hal_camera_default radio_prop:file {map getattr};
-allow hal_camera_default rebootescrow_hal_prop:file {map getattr};
-# allow hal_camera_default recovery_update_prop:file {map getattr};
-allow hal_camera_default restorecon_prop:file {map getattr};
-allow hal_camera_default rfkilldisabled_prop:file {map getattr};
-allow hal_camera_default safemode_prop:file {map getattr};
-allow hal_camera_default shell_prop:file {map getattr};
-allow hal_camera_default storage_config_prop:file {map getattr};
-allow hal_camera_default surfaceflinger_display_prop:file {map getattr};
+allow hal_camera_default device_config_runtime_native_prop:file { getattr map };
+allow hal_camera_default exported2_radio_prop:file { getattr map open };
+allow hal_camera_default exported3_radio_prop:file { getattr map open };
+allow hal_camera_default exported_audio_prop:file { getattr map open };
+allow hal_camera_default vendor_xdsp_device:chr_file { ioctl open read };

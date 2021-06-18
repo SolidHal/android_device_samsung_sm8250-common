@@ -130,20 +130,28 @@ TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
-include device/qcom/sepolicy/SEPolicy.mk
-
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
+    device/qcom/sepolicy/generic/public \
+    device/qcom/sepolicy/generic/public/attribute \
+    device/qcom/sepolicy/qva/public \
+    device/qcom/sepolicy/qva/public/attribute \
     device/samsung_slsi/sepolicy/common/public \
     $(COMMON_PATH)/sepolicy/platform/public
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
+    device/qcom/sepolicy/generic/private \
+    device/qcom/sepolicy/qva/private \
     device/samsung_slsi/sepolicy/common/private \
     $(COMMON_PATH)/sepolicy/platform/private
 
 PRODUCT_PUBLIC_SEPOLICY_DIRS += \
+    device/qcom/sepolicy/generic/product/public \
+    device/qcom/sepolicy/qva/product/public \
     $(COMMON_PATH)/sepolicy/public
 
 PRODUCT_PRIVATE_SEPOLICY_DIRS += \
+    device/qcom/sepolicy/generic/product/private \
+    device/qcom/sepolicy/qva/product/private \
     $(COMMON_PATH)/sepolicy/private
 
 BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor

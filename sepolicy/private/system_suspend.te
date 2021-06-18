@@ -1,0 +1,2 @@
+type sysfs_battery, sysfs_type, r_fs_type, fs_type;
+allow system_suspend sysfs_battery:file { getattr open read };

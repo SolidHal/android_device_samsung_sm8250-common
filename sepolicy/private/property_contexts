@@ -5,4 +5,4 @@ persist.cache_status_32    u:object_r:cache_status_prop:s0
 persist.cache_integrity_64    u:object_r:cache_status_prop:s0
 persist.cache_integrity_32    u:object_r:cache_status_prop:s0
 
-persist.ril.interfaceconf.failed u:object_r:default_prop:s0
+persist.ril.interfaceconf.failed u:object_r:vendor_members_prop:s0

@@ -1,3 +1,0 @@
-type vendor_qti_init_shell, exec_type, vendor_file_type, file_type;
-
-allow vendor_qti_init_shell ctl_start_prop:property_service {set};
