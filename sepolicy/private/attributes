@@ -1,1 +1,2 @@
 attribute hal_perf;
+attribute hal_perf_client;
