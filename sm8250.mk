@@ -165,6 +165,12 @@ PRODUCT_COPY_FILES += \
     $(CONFIG_PATH)/etc/empty:$(TARGET_COPY_OUT_VENDOR_OVERLAY)/etc/init/wsm-service.rc \
     $(CONFIG_PATH)/etc/excluded_hardware.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/excluded_hardware.xml
 
+
+#ODM
+PRODUCT_COPY_FILES += \
+ $(CONFIG_PATH)/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_ODM)/etc/media_profiles_V1_0.xml
+
+
 # Platform packages and permission
 include $(COMMON_PATH)/platform/init.mk
 include $(COMMON_PATH)/platform/permissions.mk
@@ -173,3 +179,6 @@ include $(COMMON_PATH)/platform/recovery.mk
 
 # Properties
 include $(COMMON_PATH)/vendor_prop.mk
+
+
+

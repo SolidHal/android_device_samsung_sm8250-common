@@ -63,17 +63,20 @@ BOARD_SUPER_PARTITION_SIZE := 8320450560
 BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 8320446464
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := \
-    system
+    system \
+    odm \
+    vendor
 
 # VENDOR -- we keep this from the stock image for now
 TARGET_COPY_OUT_VENDOR := vendor
+BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
 
 ### PRODUCT
 TARGET_COPY_OUT_PRODUCT := system/product
-# TARGET_COPY_OUT_SYSTEM_EXT := system/system_ext
 
 # we get odm from the stock image for now
-# TARGET_COPY_OUT_ODM := odm
+TARGET_COPY_OUT_ODM := odm
+BOARD_ODMIMAGE_FILE_SYSTEM_TYPE := ext4
 # BOARD_PREBUILT_ODMIMAGE := true
 
 TARGET_FS_CONFIG_GEN := $(CONFIG_PATH)/fs/config.fs
@@ -126,6 +129,8 @@ DEVICE_FRAMEWORK_MANIFEST_FILE += $(COMMON_PATH)/framework_manifest.xml
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
+TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
