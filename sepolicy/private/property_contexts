@@ -13,6 +13,21 @@ vendor.wifi.dualconcurrent.interface u:object_r:vendor_wifi_prop:s0
 
 vendor.sensor.file.permission u:object_r:vendor_sensors_prop:s0
 
+vendor.camera.aux.packagelist              u:object_r:vendor_persist_camera_prop:s0
+ctl.keymaster-sb-4-0               u:object_r:vendor_km_strongbox_version_prop:s0
+vendor.bluetooth_fw_ver                     u:object_r:wifi_log_prop:s0
+persist.vendor.camera.adjustfps              u:object_r:exported_system_prop:s0
+persist.sys.camera.                      u:object_r:sec_camera_prop:s0
+ro.security.keystore.keytype                       u:object_r:exported_system_prop:s0
+security.securehw.            u:object_r:vendor_securehw_prop:s0
+security.securenvm.available            u:object_r:vendor_securenvm_prop:s0
+ro.slmk.                                           u:object_r:exported_config_prop:s0
+
+ro.config.pageboost.vramdisk.                    u:object_r:exported_config_prop:s0
+ro.config.pageboost.io_prefetch.                 u:object_r:exported_config_prop:s0
+ro.config.pageboost.active_launch.enabled          u:object_r:exported2_config_prop:s0 exact
+ro.config.pageboost.mem_prepare.enabled            u:object_r:exported2_config_prop:s0 exact
+
 #unsure about the ones below here
 ro.factory.sensor.delay.init u:object_r:vndk_prop:s0
 ctl.start$ril-daemon u:object_r:ctl_start_ril_prop:s0
@@ -24,5 +39,4 @@ drmdiag.load u:object_r:shal_debug_prop:s0
 persist.ims.regmanager.mode u:object_r:shal_debug_prop:s0
 persist.usb.hvdcp.detect u:object_r:shal_debug_prop:s0
 ro.product.build.type u:object_r:shal_debug_prop:s0
-
 
