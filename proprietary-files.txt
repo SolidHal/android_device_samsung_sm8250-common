@@ -76,7 +76,6 @@ vendor/lib64/libtlc_comm_ddar.so
 vendor/lib64/vendor.qti.hardware.display.mapper@3.0.so
 vendor/lib64/lib_SoundAlive_play_plus_ver400.so
 vendor/lib64/libOmxSwVencMpeg4.so
-vendor/lib64/libdrmutils.so
 vendor/lib64/libeffectsconfig.so
 vendor/lib64/libwpa_client.so
 vendor/lib64/libMpeg4SwEncoder.so
@@ -340,7 +339,6 @@ vendor/lib64/vendor.samsung.hardware.tlc.ddar@1.0-impl.so
 vendor/lib64/libbauthserver.so
 vendor/lib64/vendor.samsung.hardware.tlc.blockchain@1.0-impl.so
 vendor/lib64/vendor.samsung.hardware.tlc.tima@1.0-impl.so
-vendor/lib64/libdrmtime.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/libcom.qti.chinodeutils.so
@@ -396,7 +394,6 @@ vendor/lib64/libcvp2.so
 vendor/lib64/vendor.samsung.hardware.sysinput@1.0.so
 vendor/lib64/libqdi.so
 vendor/lib64/unnhal-acc-hta.so
-vendor/lib64/libdrm.so
 vendor/lib64/vendor.samsung.hardware.snap@1.1.so
 vendor/lib64/libvkservice.so
 vendor/lib64/libsomxmp43d.so
@@ -593,7 +590,6 @@ vendor/lib64/vendor.display.color@1.0.so
 vendor/lib64/nfc_nci_nxpsn.so
 vendor/lib64/libqsocket.so
 vendor/lib64/vendor.display.postproc@1.0.so
-vendor/lib64/libdrmfs.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libsecril-client.so
 vendor/lib64/libsevrc.so
@@ -1369,7 +1365,6 @@ vendor/lib/libbeautyshot.arcsoft.so
 vendor/lib/vendor.qti.hardware.display.mapper@3.0.so
 vendor/lib/lib_SoundAlive_play_plus_ver400.so
 vendor/lib/libOmxSwVencMpeg4.so
-vendor/lib/libdrmutils.so
 vendor/lib/libeffectsconfig.so
 vendor/lib/libstagefright_soft_g711dec.so
 vendor/lib/libwpa_client.so
@@ -1625,7 +1620,6 @@ vendor/lib/libllvm-glnext.so
 vendor/lib/libgnsspps.so
 vendor/lib/com.qualcomm.qti.uceservice@2.2.so
 vendor/lib/libbauthserver.so
-vendor/lib/libdrmtime.so
 vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/libaudio_log_utils.so
@@ -1674,7 +1668,6 @@ vendor/lib/libstagefright_soft_vpxdec.so
 vendor/lib/libcvp2.so
 vendor/lib/libqdi.so
 vendor/lib/unnhal-acc-hta.so
-vendor/lib/libdrm.so
 vendor/lib/vendor.samsung.hardware.snap@1.1.so
 vendor/lib/libsomxmp43d.so
 vendor/lib/libgcs-ipc.so
@@ -1856,7 +1849,6 @@ vendor/lib/vendor.display.color@1.4.so
 vendor/lib/vendor.display.color@1.0.so
 vendor/lib/libqsocket.so
 vendor/lib/vendor.display.postproc@1.0.so
-vendor/lib/libdrmfs.so
 vendor/lib/libdsutils.so
 vendor/lib/lib_lvacfs.so
 vendor/lib/libsecril-client.so
