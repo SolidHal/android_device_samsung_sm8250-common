@@ -588,7 +588,6 @@ vendor/lib64/libipebpsstriping.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
 vendor/lib64/libsynx.so
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
-vendor/lib64/libtinycompress.so
 vendor/lib64/libmpbase.so
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libskewknob.so
@@ -697,7 +696,6 @@ vendor/lib64/libsubsystem_control.so
 vendor/lib64/libvppclient.so
 vendor/lib64/vendor.qti.data.slm@1.0.so
 vendor/lib64/libdk_vnd_service_core.so
-vendor/lib64/libtinyxml.so
 vendor/lib64/libdsms_vendor.so
 vendor/lib64/libthreadutils.so
 vendor/lib64/libsomxcmn.so
@@ -772,7 +770,6 @@ vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libOmxAlacDecSw.so
 vendor/lib64/vendor.qti.gnss@2.1.so
 vendor/lib64/libsomxwmv7d.so
-vendor/lib64/libtinyxml2_1.so
 vendor/lib64/vendor.qti.gnss@4.0.so
 vendor/lib64/libtriplecam_video_optical_zoom.so
 vendor/lib64/lib_SoundBooster_ver1050.so
@@ -1799,7 +1796,6 @@ vendor/lib/libipebpsstriping.so
 vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so
 vendor/lib/libsynx.so
 vendor/lib/vendor.qti.hardware.soter@1.0.so
-vendor/lib/libtinycompress.so
 vendor/lib/libmpbase.so
 vendor/lib/libskewknob.so
 vendor/lib/libadreno_utils.so
@@ -1917,7 +1913,6 @@ vendor/lib/libsubsystem_control.so
 vendor/lib/libapex_utils.so
 vendor/lib/libvppclient.so
 vendor/lib/vendor.qti.data.slm@1.0.so
-vendor/lib/libtinyxml.so
 vendor/lib/libthreadutils.so
 vendor/lib/libsomxcmn.so
 vendor/lib/librpmb.so
@@ -1988,7 +1983,6 @@ vendor/lib/libOmxAlacDecSw.so
 vendor/lib/vendor.qti.gnss@2.1.so
 vendor/lib/libgaya.so
 vendor/lib/libsomxwmv7d.so
-vendor/lib/libtinyxml2_1.so
 vendor/lib/vendor.qti.gnss@4.0.so
 vendor/lib/libtriplecam_video_optical_zoom.so
 vendor/lib/lib_SoundBooster_ver1050.so
