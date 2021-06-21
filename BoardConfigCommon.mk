@@ -125,6 +125,8 @@ TARGET_SEC_FP_REQUEST_ENROLL_TYPE := 0
 
 # HIDL
 DEVICE_FRAMEWORK_MANIFEST_FILE += $(COMMON_PATH)/framework_manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
@@ -135,28 +137,23 @@ TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 
+include device/qcom/sepolicy_vndr/SEPolicy.mk
+
 BOARD_PLAT_PUBLIC_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/public \
-    device/qcom/sepolicy/generic/public/attribute \
-    device/qcom/sepolicy/qva/public \
-    device/qcom/sepolicy/qva/public/attribute \
     device/samsung_slsi/sepolicy/common/public \
     $(COMMON_PATH)/sepolicy/platform/public
 
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += \
-    device/qcom/sepolicy/generic/private \
-    device/qcom/sepolicy/qva/private \
     device/samsung_slsi/sepolicy/common/private \
     $(COMMON_PATH)/sepolicy/platform/private
 
 PRODUCT_PUBLIC_SEPOLICY_DIRS += \
-    device/qcom/sepolicy/generic/product/public \
-    device/qcom/sepolicy/qva/product/public \
     $(COMMON_PATH)/sepolicy/public
 
 PRODUCT_PRIVATE_SEPOLICY_DIRS += \
-    device/qcom/sepolicy/generic/product/private \
-    device/qcom/sepolicy/qva/product/private \
     $(COMMON_PATH)/sepolicy/private
 
-BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+# BOARD_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+
+# Inherit from the proprietary version
+-include vendor/oneplus/sm8250-common/BoardConfigVendor.mk
