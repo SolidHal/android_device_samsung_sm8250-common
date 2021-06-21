@@ -212,7 +212,6 @@ vendor/lib64/libcamxncs.so
 vendor/lib64/com.qti.feature2.anchorsync.so
 vendor/lib64/libqdp.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib64/librilqmiservices-ext.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.display.allocator@1.0.so
 vendor/lib64/vendor.qti.hardware.seccam@1.0.so
@@ -504,7 +503,6 @@ vendor/lib64/libI420colorconvert.so
 vendor/lib64/libarcsoft_dualcam_portraitlighting.so
 vendor/lib64/vendor.samsung.hardware.tlc.blockchain@1.0.so
 vendor/lib64/libmmosal.so
-vendor/lib64/librilutils.so
 vendor/lib64/libGPQTEEC_vendor.so
 vendor/lib64/libscveObjectTracker_stub.so
 vendor/lib64/android.hardware.gatekeeper@1.0-impl.so
@@ -550,7 +548,6 @@ vendor/lib64/vendor.samsung.hardware.radio@2.1.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libhyper.so
 vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/libril.so
 vendor/lib64/vendor.display.config@1.3.so
 vendor/lib64/vendor.display.config@1.5.so
 vendor/lib64/libsfplugin_ccodec_utils.so
@@ -1488,7 +1485,6 @@ vendor/lib/libcamxncs.so
 vendor/lib/com.qti.feature2.anchorsync.so
 vendor/lib/libqdp.so
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
-vendor/lib/librilqmiservices-ext.so
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib/vendor.qti.hardware.display.allocator@1.0.so
 vendor/lib/vendor.qti.hardware.seccam@1.0.so
@@ -1761,7 +1757,6 @@ vendor/lib/libI420colorconvert.so
 vendor/lib/libFrucSSMLib.so
 vendor/lib/libarcsoft_dualcam_portraitlighting.so
 vendor/lib/libmmosal.so
-vendor/lib/librilutils.so
 vendor/lib/libGPQTEEC_vendor.so
 vendor/lib/libscveObjectTracker_stub.so
 vendor/lib/android.hardware.gatekeeper@1.0-impl.so
@@ -1800,7 +1795,6 @@ vendor/lib/libsensorndkbridge.so
 vendor/lib/vendor.samsung.hardware.radio@2.1.so
 vendor/lib/libcamera_nn_stub.so
 vendor/lib/libGPreqcancel_svc.so
-vendor/lib/libril.so
 vendor/lib/vendor.display.config@1.3.so
 vendor/lib/libstagefright_amrnb_common.so
 vendor/lib/vendor.display.config@1.5.so
