@@ -543,7 +543,6 @@ vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so
 vendor/lib64/libbthost_if.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libbtnv.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/vendor.samsung.hardware.radio@2.1.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libhyper.so
@@ -648,7 +647,6 @@ vendor/lib64/libcamxifestriping.so
 vendor/lib64/libFace3D_hlos.so
 vendor/lib64/libqti-utils.so
 vendor/lib64/com.qti.feature2.memcpy.so
-vendor/lib64/libsensorslog.so
 vendor/lib64/libqseed3.so
 vendor/lib64/libarcsoft_superresolution_bokeh.so
 vendor/lib64/vendor.samsung.hardware.tlc.iccc@1.0.so
@@ -748,7 +746,6 @@ vendor/lib64/vintf-codecsolution-V1-ndk_platform.so
 vendor/lib64/libscenedetector.uniplugin@1.0.so
 vendor/lib64/libsns_fastRPC_util.so
 vendor/lib64/libspl.so
-vendor/lib64/libsensorlistener.so
 vendor/lib64/libcamxfdalgo.so
 vendor/lib64/ftm_fm_lib.so
 vendor/lib64/libhdcpsrm.so
@@ -1791,7 +1788,6 @@ vendor/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so
 vendor/lib/libbthost_if.so
 vendor/lib/libadiertac.so
 vendor/lib/libbtnv.so
-vendor/lib/libsensorndkbridge.so
 vendor/lib/vendor.samsung.hardware.radio@2.1.so
 vendor/lib/libcamera_nn_stub.so
 vendor/lib/libGPreqcancel_svc.so
@@ -1888,7 +1884,6 @@ vendor/lib/libcamxifestriping.so
 vendor/lib/libFace3D_hlos.so
 vendor/lib/libqti-utils.so
 vendor/lib/com.qti.feature2.memcpy.so
-vendor/lib/libsensorslog.so
 vendor/lib/libqseed3.so
 vendor/lib/libarcsoft_superresolution_bokeh.so
 vendor/lib/vendor.qti.hardware.perf@2.1.so
@@ -2001,7 +1996,6 @@ vendor/lib/vintf-codecsolution-V1-ndk_platform.so
 vendor/lib/libscenedetector.uniplugin@1.0.so
 vendor/lib/libsns_fastRPC_util.so
 vendor/lib/libspl.so
-vendor/lib/libsensorlistener.so
 vendor/lib/libcamxfdalgo.so
 vendor/lib/ftm_fm_lib.so
 vendor/lib/libhdcpsrm.so
