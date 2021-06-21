@@ -5,7 +5,6 @@ vendor/lib64/libqmi_client_helper.so
 vendor/lib64/libsomxwmad.so
 vendor/lib64/libarcsoft_aieffectpk_video_bokeh.so
 vendor/lib64/libsomxqcelpd.so
-vendor/lib64/libnfnetlink.so
 vendor/lib64/vendor.samsung.hardware.radio.channel@2.0.so
 vendor/lib64/libcamximageformatutils.so
 vendor/lib64/libvideotransitioneffect_roll.arcsoft.so
@@ -49,20 +48,16 @@ vendor/lib64/libqdutils.so
 vendor/lib64/libsysmon_cdsp_skel.so
 vendor/lib64/libopenvx.so
 vendor/lib64/vendor.samsung.hardware.security.hdcp.keyprovisioning@1.0.so
-vendor/lib64/vendor.qti.hardware.perf@2.2.so
 vendor/lib64/libreffeature.so
 vendor/lib64/libCB.so
 vendor/lib64/libhistogram.so
-vendor/lib64/libpuresoftkeymasterdevice.so
 vendor/lib64/libhal.wsm.samsung.so
 vendor/lib64/libidl.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsavscmn.so
-vendor/lib64/libkeystore-wifi-hidl.so
 vendor/lib64/libdisplaydebug.so
 vendor/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libucm_tlc_direct_comm.so
-vendor/lib64/libsoft_attestation_cert.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libsi.so
 vendor/lib64/libsnap_compute.so
@@ -70,7 +65,6 @@ vendor/lib64/libnetmgr_common.so
 vendor/lib64/libSSMAutoTrigger_interface.so
 vendor/lib64/libbeautyshot.arcsoft.so
 vendor/lib64/libtlc_comm_ddar.so
-vendor/lib64/vendor.qti.hardware.display.mapper@3.0.so
 vendor/lib64/lib_SoundAlive_play_plus_ver400.so
 vendor/lib64/libOmxSwVencMpeg4.so
 vendor/lib64/libwpa_client.so
@@ -90,7 +84,6 @@ vendor/lib64/libSSM_AutoTrigger.so
 vendor/lib64/libtswrappercommon.so
 vendor/lib64/libOmxAmrEnc.so
 vendor/lib64/libwsmd_functions.so
-vendor/lib64/vendor.display.config@1.2.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libscveCommon_stub.so
 vendor/lib64/libsnap_vndk.so
@@ -110,7 +103,6 @@ vendor/lib64/libHprFace_GAE_api.camera.samsung.so
 vendor/lib64/libsnpe_wrapper.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/vendor.samsung.hardware.security.drk@2.0.so
-vendor/lib64/vendor.qti.hardware.display.composer@2.0.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libHMT.so
 vendor/lib64/libaudioparsers.so
@@ -119,15 +111,12 @@ vendor/lib64/libperipheral_client.so
 vendor/lib64/liblivefocus_preview_interface.so
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
-vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.0.so
 vendor/lib64/libnlnetmgr.so
 vendor/lib64/vendor.samsung.hardware.wifi.supplicant@3.0.so
-vendor/lib64/vendor.display.config@1.7.so
 vendor/lib64/libsnaace.so
 vendor/lib64/libhdcp1prov.so
 vendor/lib64/libsavsac.so
 vendor/lib64/vendor.samsung.hardware.vibrator@2.0.so
-vendor/lib64/vendor.qti.hardware.servicetracker@1.1.so
 vendor/lib64/libsocial_image_enhancement.uniplugin@1.0.so
 vendor/lib64/libmmcamera_faceproc2.so
 vendor/lib64/libqmiservices.so
@@ -155,11 +144,9 @@ vendor/lib64/libhta.so
 vendor/lib64/libPersonal_interface.so
 vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/vendor.samsung.hardware.security.engmode@1.0.so
-vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/libsomxadpcmd.so
 vendor/lib64/libsdm-colormgr-algo.so
-vendor/lib64/vendor.display.config@1.4.so
 vendor/lib64/libmdmdetect.so
 vendor/lib64/vendor.samsung.hardware.hyper-V1-ndk_platform.so
 vendor/lib64/libspeakercalibration.so
@@ -186,7 +173,6 @@ vendor/lib64/hw/gatekeeper.mdfpp.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-qti-display.so
 vendor/lib64/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
 vendor/lib64/hw/vulkan.adreno.so
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so
 vendor/lib64/hw/vendor.samsung.hardware.snap@1.1-impl.so
@@ -209,9 +195,7 @@ vendor/lib64/com.qti.feature2.anchorsync.so
 vendor/lib64/libqdp.so
 vendor/lib64/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
-vendor/lib64/vendor.qti.hardware.display.allocator@1.0.so
 vendor/lib64/vendor.qti.hardware.seccam@1.0.so
-vendor/lib64/vendor.display.config@1.10.so
 vendor/lib64/vendor.samsung.hardware.tlc.ucm@2.0-impl.so
 vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib64/libnative-api.so
@@ -220,7 +204,6 @@ vendor/lib64/libsmemlog.so
 vendor/lib64/libsnsapi.so
 vendor/lib64/libperfgluelayer.so
 vendor/lib64/libdataitems.so
-vendor/lib64/ese_spi_nxp.so
 vendor/lib64/libOmxAmrDec.so
 vendor/lib64/libvpphvx.so
 vendor/lib64/cdsp_face.so
@@ -230,7 +213,6 @@ vendor/lib64/libOmxEvrcDec.so
 vendor/lib64/libQTEEConnector_vendor.so
 vendor/lib64/vendor.samsung.hardware.camera.provider@4.0.so
 vendor/lib64/vendor.samsung.hardware.hqm@1.0.so
-vendor/lib64/vendor.qti.hardware.display.mapper@2.0.so
 vendor/lib64/libStDrvInt.so
 vendor/lib64/vendor.display.color@1.3.so
 vendor/lib64/libsecfr_model.so
@@ -243,7 +225,6 @@ vendor/lib64/com.qti.feature2.demux.so
 vendor/lib64/btaudio_offload_if.so
 vendor/lib64/libsomxaped.so
 vendor/lib64/libos.so
-vendor/lib64/vendor.qti.hardware.display.allocator@3.0.so
 vendor/lib64/camera/com.samsung.sensormodule.1_1_lsi_s5k3j1.bin
 vendor/lib64/camera/com.samsung.sensormodule.3_lsi_s5kgw2.bin
 vendor/lib64/camera/com.samsung.sensor.imx374.so
@@ -335,13 +316,11 @@ vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/liblivefocus_preview_engine.so
-vendor/lib64/vendor.qti.hardware.display.mapper@1.0.so
 vendor/lib64/libOmxCore.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 vendor/lib64/liboffloadhal.so
 vendor/lib64/libpalm.uniplugin@1.0.so
 vendor/lib64/libaudioconfigstore.so
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0.so
 vendor/lib64/libsomxhevcdsw.so
 vendor/lib64/libcpion.so
 vendor/lib64/libcamxstatscore.so
@@ -368,7 +347,6 @@ vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib64/vendor.samsung.hardware.miscpower@2.0.so
 vendor/lib64/com.qualcomm.qti.imscmservice@2.2.so
-vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so
 vendor/lib64/libcapiv2svarnn.so
 vendor/lib64/libsomxevrce.so
 vendor/lib64/libkeymasterutils.so
@@ -397,7 +375,6 @@ vendor/lib64/libcamerapostproc.so
 vendor/lib64/libOmxBlackBar.so
 vendor/lib64/vendor.qti.hardware.automotive.vehicle@1.0.so
 vendor/lib64/libC2D2.so
-vendor/lib64/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib64/libdeccfg.so
 vendor/lib64/com.qti.feature2.swmf.so
 vendor/lib64/libvideobeauty.arcsoft.so
@@ -420,7 +397,6 @@ vendor/lib64/libtlc_comm_atn.so
 vendor/lib64/libgcs-osal.so
 vendor/lib64/vendor.samsung.hardware.tlc.tima@1.0.so
 vendor/lib64/com.qti.feature2.rawhdr.so
-vendor/lib64/libkeymaster4support.so
 vendor/lib64/libsnamrwb.so
 vendor/lib64/libegis_fp_normal_sensor_test.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
@@ -432,7 +408,6 @@ vendor/lib64/vendor.qti.gnss@1.0.so
 vendor/lib64/libsns_low_lat_stream_stub.so
 vendor/lib64/libsystem_health_mon.so
 vendor/lib64/libsnaplite_native.so
-vendor/lib64/libkeymaster4_1support.so
 vendor/lib64/libscveObjectTracker.so
 vendor/lib64/libsomxamrd.so
 vendor/lib64/libloadalgo_stub.so
@@ -448,7 +423,6 @@ vendor/lib64/libbauthtzcommon.so
 vendor/lib64/libarcsoft_dualcam_portraitlighting_preview.so
 vendor/lib64/libQSEEComAPI.so
 vendor/lib64/lib_SoundAlive_3DPosition_ver202.so
-vendor/lib64/vendor.display.config@1.6.so
 vendor/lib64/libops.so
 vendor/lib64/libcvp_common.so
 vendor/lib64/vendor.samsung.hardware.tlc.tima@1.1.so
@@ -464,7 +438,6 @@ vendor/lib64/soundfx/libqcomvoiceprocessing.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libswdap.so
 vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libvisualizer.so
 vendor/lib64/soundfx/libmyspace.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libqcreverb.so
@@ -482,7 +455,6 @@ vendor/lib64/libssc_default_listener.so
 vendor/lib64/libengmode_client.so
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
 vendor/lib64/libpadm.so
-vendor/lib64/libkeymaster_portable.so
 vendor/lib64/libfastcvopt.so
 vendor/lib64/vendor.samsung.hardware.nfc@2.0.so
 vendor/lib64/libsqcp.so
@@ -501,8 +473,6 @@ vendor/lib64/libmultiviewzoom_interface.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libqmi_cci.so
 vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libnetfilter_conntrack.so
-vendor/lib64/libhwminijail.so
 vendor/lib64/libdisp-aba.so
 vendor/lib64/libipanat.so
 vendor/lib64/E10QS_libTsPdafm_Front.so
@@ -533,8 +503,6 @@ vendor/lib64/vendor.samsung.hardware.radio@2.1.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libhyper.so
 vendor/lib64/libGPreqcancel_svc.so
-vendor/lib64/vendor.display.config@1.3.so
-vendor/lib64/vendor.display.config@1.5.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/com.qti.feature2.mfsr.so
 vendor/lib64/libsoc_helper_jni.so
@@ -543,18 +511,15 @@ vendor/lib64/libmdmimgload.so
 vendor/lib64/liblocation_api.so
 vendor/lib64/libminksocket.so
 vendor/lib64/libscveCommon.so
-vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 vendor/lib64/libNfcProperties.so
 vendor/lib64/libgcs-calwrapper.so
-vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so
 vendor/lib64/libgralloc.qti.so
 vendor/lib64/libmmcamera_faceproc.so
 vendor/lib64/com.qti.feature2.generic.so
 vendor/lib64/vendor.qti.hardware.vpp@1.2.so
-vendor/lib64/vendor.qti.hardware.servicetracker@1.2.so
 vendor/lib64/libskeymaster4device.so
 vendor/lib64/libsaped.so
 vendor/lib64/vendor.display.color@1.4.so
@@ -571,9 +536,7 @@ vendor/lib64/libgps.utils.so
 vendor/lib64/libspcom.so
 vendor/lib64/libqtikeymaster4.so
 vendor/lib64/libtriplecam_optical_zoom_control.so
-vendor/lib64/vendor.display.config@1.11.so
 vendor/lib64/libevent_finder.uniplugin@1.0.so
-vendor/lib64/libkeymaster4.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/vendor.samsung.hardware.radio.bridge@2.0.so
 vendor/lib64/libsynx.so
@@ -584,9 +547,7 @@ vendor/lib64/libskewknob.so
 vendor/lib64/libadreno_utils.so
 vendor/lib64/libhta_hexagon_runtime.so
 vendor/lib64/libucm_tlc_comm.so
-vendor/lib64/vendor.qti.hardware.servicetracker@1.0.so
 vendor/lib64/libmm-omxcore.so
-vendor/lib64/libkeymaster_messages.so
 vendor/lib64/liblivefocus_capture_interface.so
 vendor/lib64/libsomx263dsw.so
 vendor/lib64/libpalmMobileDetectorFull.so
@@ -607,7 +568,6 @@ vendor/lib64/libadsprpc.so
 vendor/lib64/R12QS_libTsPdafm.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libswregistrationalgo.so
-vendor/lib64/vendor.display.config@1.9.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/vendor.samsung.hardware.tlc.ddar@1.0.so
 vendor/lib64/libOmxApeDec.so
@@ -620,7 +580,6 @@ vendor/lib64/libsdmextension.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libhdcp2p2prov.so
 vendor/lib64/libdualcam_refocus_video.so
-vendor/lib64/vendor.display.config@1.8.so
 vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so
 vendor/lib64/libxml.so
 vendor/lib64/libOpenCv.camera.samsung.so
@@ -634,10 +593,8 @@ vendor/lib64/com.qti.feature2.memcpy.so
 vendor/lib64/libqseed3.so
 vendor/lib64/libarcsoft_superresolution_bokeh.so
 vendor/lib64/vendor.samsung.hardware.tlc.iccc@1.0.so
-vendor/lib64/vendor.qti.hardware.perf@2.1.so
 vendor/lib64/libfocuspeaking.so
 vendor/lib64/libMoonVerifier_v1.camera.samsung.so
-vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so
 vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so
 vendor/lib64/libsnsdiaglog.so
@@ -653,15 +610,12 @@ vendor/lib64/com.qti.feature2.gs.so
 vendor/lib64/libOmxAlacDec.so
 vendor/lib64/libhdrdynamicootf.so
 vendor/lib64/libminkdescriptor.so
-vendor/lib64/vendor.display.config@1.1.so
 vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib64/R12QS_libTsAf.so
 vendor/lib64/libMpeghSwEnc.so
 vendor/lib64/libsns_registry_skel.so
 vendor/lib64/libplatformconfig.so
-vendor/lib64/vendor.qti.hardware.display.mapper@1.1.so
 vendor/lib64/libscveObjectSegmentation.so
-vendor/lib64/vendor.qti.hardware.display.mapper@4.0.so
 vendor/lib64/R12QS_libTsAwb.so
 vendor/lib64/libvideotransitioneffect_zoom.arcsoft.so
 vendor/lib64/libSecC2ComponentStore.so
@@ -690,7 +644,6 @@ vendor/lib64/libthreadutils.so
 vendor/lib64/libsomxcmn.so
 vendor/lib64/librpmb.so
 vendor/lib64/libengmode_tlc.so
-vendor/lib64/vendor.display.config@1.0.so
 vendor/lib64/libhdr_tm.so
 vendor/lib64/libsomxcore_vendor.so
 vendor/lib64/vendor.display.color@1.1.so
@@ -744,7 +697,6 @@ vendor/lib64/libmeters.so
 vendor/lib64/libLocalTM_wrapper.camera.samsung.so
 vendor/lib64/libbase64.so
 vendor/lib64/libfloatingfeature.so
-vendor/lib64/vendor.qti.hardware.display.composer@1.0.so
 vendor/lib64/libqcmaputils.so
 vendor/lib64/libpa.so
 vendor/lib64/libtzdrmgenprov.so
@@ -752,8 +704,6 @@ vendor/lib64/libPersonal_core.camera.samsung.so
 vendor/lib64/libjpegQtable_interface.so
 vendor/lib64/vendor.samsung.hardware.wifi.hostapd@3.0.so
 vendor/lib64/libqdMetaData.so
-vendor/lib64/libchrome.so
-vendor/lib64/libkeystore-engine-wifi-hidl.so
 vendor/lib64/libcdsp_default_listener.so
 vendor/lib64/libOmxAlacDecSw.so
 vendor/lib64/vendor.qti.gnss@2.1.so
@@ -774,9 +724,6 @@ vendor/lib64/libsdsprpc.so
 vendor/lib64/libsoc_helper.so
 vendor/lib64/libObjectDetector_v1.camera.samsung.so
 vendor/lib64/vendor.samsung.hardware.wifi@2.0.so
-vendor/lib64/vendor.qti.hardware.display.composer@3.0.so
-vendor/lib64/vendor.qti.hardware.display.allocator@4.0.so
-vendor/lib64/vendor.display.config@2.0.so
 vendor/lib64/libOmxEvrcEnc.so
 vendor/lib64/libchilog.so
 vendor/lib64/libqcc_file_agent.so
@@ -787,7 +734,6 @@ vendor/lib64/libdisplayqos.so
 vendor/lib64/vendor.qti.gnss@1.2.so
 vendor/lib64/libtlc_comm_iccc.so
 vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so
-vendor/lib64/vendor.qti.hardware.perf@2.0.so
 vendor/lib64/libpdmapper.so
 vendor/lib64/libcdfw.so
 vendor/lib64/libbt-vendor.so
@@ -1228,7 +1174,6 @@ vendor/etc/audio_policy_configuration_base.xml
 vendor/etc/media_codecs_vendor_audio.xml
 vendor/etc/media_codecs_ac4.xml
 vendor/etc/plmn_delta_attaio.bin
-vendor/etc/NOTICE.xml.gz
 vendor/etc/wlan_vendor_rc
 vendor/etc/mtu-conf.xml
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
@@ -1300,7 +1245,6 @@ vendor/lib/libacdbrtac.so
 vendor/lib/libqdutils.so
 vendor/lib/libsysmon_cdsp_skel.so
 vendor/lib/libopenvx.so
-vendor/lib/vendor.qti.hardware.perf@2.2.so
 vendor/lib/libCB.so
 vendor/lib/libidl.so
 vendor/lib/libsdm-color.so
@@ -1314,7 +1258,6 @@ vendor/lib/libnetmgr_common.so
 vendor/lib/libSSMAutoTrigger_interface.so
 vendor/lib/libmmrtpdecoder_proprietary.so
 vendor/lib/libbeautyshot.arcsoft.so
-vendor/lib/vendor.qti.hardware.display.mapper@3.0.so
 vendor/lib/lib_SoundAlive_play_plus_ver400.so
 vendor/lib/libOmxSwVencMpeg4.so
 vendor/lib/libwpa_client.so
@@ -1334,7 +1277,6 @@ vendor/lib/libSSM_AutoTrigger.so
 vendor/lib/libdsd2pcm.so
 vendor/lib/libtswrappercommon.so
 vendor/lib/libOmxAmrEnc.so
-vendor/lib/vendor.display.config@1.2.so
 vendor/lib/libsns_device_mode_stub.so
 vendor/lib/libscveCommon_stub.so
 vendor/lib/libsnap_vndk.so
@@ -1354,7 +1296,6 @@ vendor/lib/com.qti.feature2.qcfa.so
 vendor/lib/libspkrprot.so
 vendor/lib/libHprFace_GAE_api.camera.samsung.so
 vendor/lib/libconfigdb.so
-vendor/lib/vendor.qti.hardware.display.composer@2.0.so
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libHMT.so
 vendor/lib/libaudioparsers.so
@@ -1363,12 +1304,9 @@ vendor/lib/libperipheral_client.so
 vendor/lib/liblivefocus_preview_interface.so
 vendor/lib/libsdynatm.so
 vendor/lib/vendor.qti.hardware.data.latency@1.0.so
-vendor/lib/vendor.qti.hardware.display.mapperextensions@1.0.so
-vendor/lib/vendor.display.config@1.7.so
 vendor/lib/libsnaace.so
 vendor/lib/libhdcp1prov.so
 vendor/lib/libsavsac.so
-vendor/lib/vendor.qti.hardware.servicetracker@1.1.so
 vendor/lib/libsocial_image_enhancement.uniplugin@1.0.so
 vendor/lib/lib_SamsungRec_08010.so
 vendor/lib/libmmcamera_faceproc2.so
@@ -1393,11 +1331,9 @@ vendor/lib/libmm-color-convertor.so
 vendor/lib/libcapiv2vop.so
 vendor/lib/libPersonal_interface.so
 vendor/lib/libcamxswprocessalgo.so
-vendor/lib/vendor.qti.hardware.capabilityconfigstore@1.0.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/libsomxadpcmd.so
 vendor/lib/libsdm-colormgr-algo.so
-vendor/lib/vendor.display.config@1.4.so
 vendor/lib/libmdmdetect.so
 vendor/lib/libhdmiedid.so
 vendor/lib/libspeakercalibration.so
@@ -1446,10 +1382,8 @@ vendor/lib/com.qti.feature2.anchorsync.so
 vendor/lib/libqdp.so
 vendor/lib/vendor.qti.hardware.qdutils_disp@1.0.so
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
-vendor/lib/vendor.qti.hardware.display.allocator@1.0.so
 vendor/lib/vendor.qti.hardware.seccam@1.0.so
 vendor/lib/libdspmc_wrapper.so
-vendor/lib/vendor.display.config@1.10.so
 vendor/lib/vendor.samsung.hardware.tlc.ucm@2.0-impl.so
 vendor/lib/vendor.qti.ims.rcsconfig@1.1.so
 vendor/lib/libnative-api.so
@@ -1470,7 +1404,6 @@ vendor/lib/libexthwplugin.so
 vendor/lib/libQTEEConnector_vendor.so
 vendor/lib/vendor.samsung.hardware.camera.provider@4.0.so
 vendor/lib/vendor.samsung.hardware.hqm@1.0.so
-vendor/lib/vendor.qti.hardware.display.mapper@2.0.so
 vendor/lib/libStDrvInt.so
 vendor/lib/vendor.display.color@1.3.so
 vendor/lib/libsecfr_model.so
@@ -1483,7 +1416,6 @@ vendor/lib/btaudio_offload_if.so
 vendor/lib/libmmrtpencoder_proprietary.so
 vendor/lib/libsomxaped.so
 vendor/lib/libos.so
-vendor/lib/vendor.qti.hardware.display.allocator@3.0.so
 vendor/lib/camera/com.samsung.sensormodule.1_1_lsi_s5k3j1.bin
 vendor/lib/camera/com.samsung.sensormodule.3_lsi_s5kgw2.bin
 vendor/lib/camera/com.samsung.sensor.imx374.so
@@ -1565,11 +1497,9 @@ vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/liblivefocus_preview_engine.so
-vendor/lib/vendor.qti.hardware.display.mapper@1.0.so
 vendor/lib/libOmxCore.so
 vendor/lib/libpalm.uniplugin@1.0.so
 vendor/lib/libaudioconfigstore.so
-vendor/lib/vendor.qti.hardware.camera.postproc@1.0.so
 vendor/lib/libsomxhevcdsw.so
 vendor/lib/libcpion.so
 vendor/lib/libcamxstatscore.so
@@ -1591,7 +1521,6 @@ vendor/lib/libsomxmp4vdsw.so
 vendor/lib/vendor.qti.imsrtpservice@3.0.so
 vendor/lib/vendor.qti.hardware.vpp@1.1.so
 vendor/lib/com.qualcomm.qti.imscmservice@2.2.so
-vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
 vendor/lib/libcapiv2svarnn.so
 vendor/lib/libsomxevrce.so
 vendor/lib/libkeymasterutils.so
@@ -1616,7 +1545,6 @@ vendor/lib/libcamerapostproc.so
 vendor/lib/libOmxBlackBar.so
 vendor/lib/vendor.qti.hardware.automotive.vehicle@1.0.so
 vendor/lib/libC2D2.so
-vendor/lib/vendor.qti.hardware.camera.device@1.0.so
 vendor/lib/libdeccfg.so
 vendor/lib/com.qti.feature2.swmf.so
 vendor/lib/libvideobeauty.arcsoft.so
@@ -1657,7 +1585,6 @@ vendor/lib/libbauthtzcommon.so
 vendor/lib/libarcsoft_dualcam_portraitlighting_preview.so
 vendor/lib/libQSEEComAPI.so
 vendor/lib/lib_SoundAlive_3DPosition_ver202.so
-vendor/lib/vendor.display.config@1.6.so
 vendor/lib/libops.so
 vendor/lib/libcvp_common.so
 vendor/lib/soundfx/libqcompostprocbundle.so
@@ -1673,7 +1600,6 @@ vendor/lib/soundfx/libqcomvoiceprocessing.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libswdap.so
 vendor/lib/soundfx/libshoebox.so
-vendor/lib/soundfx/libvisualizer.so
 vendor/lib/soundfx/libmyspace.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libqcreverb.so
@@ -1732,8 +1658,6 @@ vendor/lib/libbtnv.so
 vendor/lib/vendor.samsung.hardware.radio@2.1.so
 vendor/lib/libcamera_nn_stub.so
 vendor/lib/libGPreqcancel_svc.so
-vendor/lib/vendor.display.config@1.3.so
-vendor/lib/vendor.display.config@1.5.so
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib/com.qti.feature2.mfsr.so
 vendor/lib/libsoc_helper_jni.so
@@ -1741,17 +1665,14 @@ vendor/lib/libFlacSwDec.so
 vendor/lib/liblocation_api.so
 vendor/lib/libminksocket.so
 vendor/lib/libscveCommon.so
-vendor/lib/vendor.qti.hardware.btconfigstore@2.0.so
 vendor/lib/vendor.qti.hardware.qccvndhal@1.0.so
 vendor/lib/libOmxVpp.so
 vendor/lib/vendor.qti.hardware.cvp@1.0.so
 vendor/lib/libgcs-calwrapper.so
-vendor/lib/vendor.qti.hardware.display.mapperextensions@1.1.so
 vendor/lib/libgralloc.qti.so
 vendor/lib/libmmcamera_faceproc.so
 vendor/lib/com.qti.feature2.generic.so
 vendor/lib/vendor.qti.hardware.vpp@1.2.so
-vendor/lib/vendor.qti.hardware.servicetracker@1.2.so
 vendor/lib/libsaped.so
 vendor/lib/vendor.display.color@1.4.so
 vendor/lib/vendor.display.color@1.0.so
@@ -1767,7 +1688,6 @@ vendor/lib/libgps.utils.so
 vendor/lib/libspcom.so
 vendor/lib/libqtikeymaster4.so
 vendor/lib/libtriplecam_optical_zoom_control.so
-vendor/lib/vendor.display.config@1.11.so
 vendor/lib/libevent_finder.uniplugin@1.0.so
 vendor/lib/libipebpsstriping.so
 vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so
@@ -1778,7 +1698,6 @@ vendor/lib/libskewknob.so
 vendor/lib/libadreno_utils.so
 vendor/lib/libhta_hexagon_runtime.so
 vendor/lib/libucm_tlc_comm.so
-vendor/lib/vendor.qti.hardware.servicetracker@1.0.so
 vendor/lib/libmm-omxcore.so
 vendor/lib/libhfp.so
 vendor/lib/liblivefocus_capture_interface.so
@@ -1801,7 +1720,6 @@ vendor/lib/libaudio_soundtrigger.so
 vendor/lib/libadsprpc.so
 vendor/lib/libcapiv2svacnn.so
 vendor/lib/libswregistrationalgo.so
-vendor/lib/vendor.display.config@1.9.so
 vendor/lib/liboemcrypto.so
 vendor/lib/libOmxApeDec.so
 vendor/lib/android.hidl.base@1.0.so
@@ -1810,7 +1728,6 @@ vendor/lib/libsdmextension.so
 vendor/lib/libtrustedapploader.so
 vendor/lib/libhdcp2p2prov.so
 vendor/lib/libdualcam_refocus_video.so
-vendor/lib/vendor.display.config@1.8.so
 vendor/lib/com.qualcomm.qti.imscmservice@2.1.so
 vendor/lib/vendor.samsung.hardware.bluetooth.a2dpsink@1.0.so
 vendor/lib/libxml.so
@@ -1824,10 +1741,8 @@ vendor/lib/libqti-utils.so
 vendor/lib/com.qti.feature2.memcpy.so
 vendor/lib/libqseed3.so
 vendor/lib/libarcsoft_superresolution_bokeh.so
-vendor/lib/vendor.qti.hardware.perf@2.1.so
 vendor/lib/libfocuspeaking.so
 vendor/lib/libMoonVerifier_v1.camera.samsung.so
-vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so
 vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so
@@ -1858,14 +1773,11 @@ vendor/lib/com.qti.feature2.gs.so
 vendor/lib/libOmxAlacDec.so
 vendor/lib/libhdrdynamicootf.so
 vendor/lib/libminkdescriptor.so
-vendor/lib/vendor.display.config@1.1.so
 vendor/lib/vendor.qti.hardware.slmadapter@1.0.so
 vendor/lib/libMpeghSwEnc.so
 vendor/lib/libsns_registry_skel.so
 vendor/lib/libplatformconfig.so
-vendor/lib/vendor.qti.hardware.display.mapper@1.1.so
 vendor/lib/libscveObjectSegmentation.so
-vendor/lib/vendor.qti.hardware.display.mapper@4.0.so
 vendor/lib/libvideotransitioneffect_zoom.arcsoft.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libSecC2ComponentStore.so
@@ -1892,7 +1804,6 @@ vendor/lib/vendor.qti.data.slm@1.0.so
 vendor/lib/libthreadutils.so
 vendor/lib/libsomxcmn.so
 vendor/lib/librpmb.so
-vendor/lib/vendor.display.config@1.0.so
 vendor/lib/libhdr_tm.so
 vendor/lib/libsomxcore_vendor.so
 vendor/lib/vendor.display.color@1.1.so
@@ -1942,7 +1853,6 @@ vendor/lib/libaudcal.so
 vendor/lib/libLocalTM_wrapper.camera.samsung.so
 vendor/lib/libbase64.so
 vendor/lib/libfloatingfeature.so
-vendor/lib/vendor.qti.hardware.display.composer@1.0.so
 vendor/lib/libqcmaputils.so
 vendor/lib/libpa.so
 vendor/lib/libtzdrmgenprov.so
@@ -1973,7 +1883,6 @@ vendor/lib/libsdsprpc.so
 vendor/lib/libsoc_helper.so
 vendor/lib/libObjectDetector_v1.camera.samsung.so
 vendor/lib/librecordalive.so
-vendor/lib/vendor.display.config@2.0.so
 vendor/lib/libOmxEvrcEnc.so
 vendor/lib/libchilog.so
 vendor/lib/libqcc_file_agent.so
@@ -1983,7 +1892,6 @@ vendor/lib/vendor.qti.ims.callcapability@1.0.so
 vendor/lib/libdisplayqos.so
 vendor/lib/vendor.qti.gnss@1.2.so
 vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so
-vendor/lib/vendor.qti.hardware.perf@2.0.so
 vendor/lib/libpdmapper.so
 vendor/lib/libmm-hdcpmgr.so
 vendor/lib/libqrtr.so
