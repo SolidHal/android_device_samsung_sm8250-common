@@ -15,6 +15,8 @@ allow spu_file labeledfs:filesystem associate;
 
 type dsp_file, file_type, contextmount_type, vendor_file_type;
 
+type vendor_log_file, file_type, data_file_type, mlstrustedobject;
+
 ### DATA
 type acdbdelta_vendor_data_file, file_type, data_file_type;
 type biometrics_vendor_data_file, file_type, data_file_type;
