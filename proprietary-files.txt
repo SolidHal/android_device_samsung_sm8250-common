@@ -79,10 +79,9 @@ vendor/lib64/libizat_client_api.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/libtlc_direct_comm_atn.so
 vendor/lib64/libthirdparty_zoomtranslator_imp.so
-vendor/lib64/libthermalclient.so
+-vendor/lib64/libthermalclient.so
 vendor/lib64/libSSM_AutoTrigger.so
 vendor/lib64/libtswrappercommon.so
-vendor/lib64/libOmxAmrEnc.so
 vendor/lib64/libwsmd_functions.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libscveCommon_stub.so
@@ -316,7 +315,6 @@ vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/libcom.qti.chinodeutils.so
 vendor/lib64/liblivefocus_preview_engine.so
-vendor/lib64/libOmxCore.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 vendor/lib64/liboffloadhal.so
 vendor/lib64/libpalm.uniplugin@1.0.so
@@ -330,7 +328,6 @@ vendor/lib64/E10QS_libTsAwbFront.so
 vendor/lib64/libengmode15.so
 vendor/lib64/libcvpcpuRev_skel.so
 vendor/lib64/libqmi_csvt_srvc.so
-vendor/lib64/libOmxQcelp13Enc.so
 vendor/lib64/libMultiROIDetector.camera.samsung.so
 vendor/lib64/com.qti.feature2.hdr.so
 vendor/lib64/libspictrl.so
@@ -455,7 +452,7 @@ vendor/lib64/libssc_default_listener.so
 vendor/lib64/libengmode_client.so
 vendor/lib64/vendor.qti.power.pasrmanager@1.0.so
 vendor/lib64/libpadm.so
-vendor/lib64/libfastcvopt.so
+-vendor/lib64/libfastcvopt.so
 vendor/lib64/vendor.samsung.hardware.nfc@2.0.so
 vendor/lib64/libsqcp.so
 vendor/lib64/libI420colorconvert.so
@@ -575,7 +572,6 @@ vendor/lib64/libhdrdynamic.so
 vendor/lib64/vendor.qti.hardware.embmssl@1.0.so
 vendor/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so
 vendor/lib64/android.hidl.base@1.0.so
-vendor/lib64/libOmxVenc.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libhdcp2p2prov.so
@@ -621,7 +617,6 @@ vendor/lib64/libvideotransitioneffect_zoom.arcsoft.so
 vendor/lib64/libSecC2ComponentStore.so
 vendor/lib64/libarcsoft_aieffectpk_video.so
 vendor/lib64/vendor.samsung.hardware.light-V1-ndk_platform.so
-vendor/lib64/libOmxVdec.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/libsomxvc1dsw.so
@@ -655,7 +650,6 @@ vendor/lib64/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
 vendor/lib64/libssc.so
 vendor/lib64/libarcsoft_object_tracking.so
 vendor/lib64/libmdf.so
-vendor/lib64/libOmxAacEnc.so
 vendor/lib64/libc2d30_bltlib.so
 vendor/lib64/libvkmanager_vendor.so
 vendor/lib64/vendor.qti.memory.pasrmanager@1.0.so
@@ -684,7 +678,6 @@ vendor/lib64/libspl.so
 vendor/lib64/libcamxfdalgo.so
 vendor/lib64/ftm_fm_lib.so
 vendor/lib64/libhdcpsrm.so
-vendor/lib64/libOmxG711Enc.so
 vendor/lib64/libgeofencing.so
 vendor/lib64/vendor.samsung.hardware.wifi@2.1.so
 vendor/lib64/vendor.qti.hardware.audiohalext@1.0.so
@@ -724,7 +717,6 @@ vendor/lib64/libsdsprpc.so
 vendor/lib64/libsoc_helper.so
 vendor/lib64/libObjectDetector_v1.camera.samsung.so
 vendor/lib64/vendor.samsung.hardware.wifi@2.0.so
-vendor/lib64/libOmxEvrcEnc.so
 vendor/lib64/libchilog.so
 vendor/lib64/libqcc_file_agent.so
 vendor/lib64/libface3d_dev.so
@@ -931,11 +923,9 @@ vendor/etc/plmn_delta_usagsm.bin
 vendor/etc/media_codecs_google_video_le.xml
 vendor/etc/IPACM_cfg.xml
 vendor/etc/media_profiles_vendor.xml
--vendor/etc/vintf/manifest/vendor.qti.hardware.display.allocator-service.xml
 -vendor/etc/vintf/manifest/power-samsung.xml
 -vendor/etc/vintf/manifest/android.hardware.usb@1.1-service.wahoo.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.tima@1.0-manifest.xml
--vendor/etc/vintf/manifest/vendor.qti.hardware.display.composer-service.xml
 -vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml
@@ -944,14 +934,12 @@ vendor/etc/media_profiles_vendor.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml
 -vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.ddar@1.0-manifest.xml
--vendor/etc/vintf/manifest/android.hardware.graphics.mapper-impl-qti-display.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.authfw@1.0-manifest.xml
 -vendor/etc/vintf/manifest/hyper-default-sec.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi@2.0-service.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.hdm@1.1-manifest.xml
 -vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service-lazy.xml
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
--vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml
 -vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
 -vendor/etc/vintf/manifest/engmode_manifest.xml
@@ -1271,12 +1259,11 @@ vendor/lib/lib_SoundAlive_AlbumArt_ver105.so
 vendor/lib/libizat_client_api.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib/libthirdparty_zoomtranslator_imp.so
-vendor/lib/libthermalclient.so
+-vendor/lib/libthermalclient.so
 vendor/lib/libvicom.so
 vendor/lib/libSSM_AutoTrigger.so
 vendor/lib/libdsd2pcm.so
 vendor/lib/libtswrappercommon.so
-vendor/lib/libOmxAmrEnc.so
 vendor/lib/libsns_device_mode_stub.so
 vendor/lib/libscveCommon_stub.so
 vendor/lib/libsnap_vndk.so
@@ -1497,7 +1484,6 @@ vendor/lib/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib/libcom.qti.chinodeutils.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/liblivefocus_preview_engine.so
-vendor/lib/libOmxCore.so
 vendor/lib/libpalm.uniplugin@1.0.so
 vendor/lib/libaudioconfigstore.so
 vendor/lib/libsomxhevcdsw.so
@@ -1507,7 +1493,6 @@ vendor/lib/libsuper_night_interface.so
 vendor/lib/com.qti.feature2.stub.so
 vendor/lib/libcvpcpuRev_skel.so
 vendor/lib/libqmi_csvt_srvc.so
-vendor/lib/libOmxQcelp13Enc.so
 vendor/lib/libMultiROIDetector.camera.samsung.so
 vendor/lib/com.qti.feature2.hdr.so
 vendor/lib/libspictrl.so
@@ -1616,7 +1601,7 @@ vendor/lib/libssc_default_listener.so
 vendor/lib/libengmode_client.so
 vendor/lib/vendor.qti.power.pasrmanager@1.0.so
 vendor/lib/libpadm.so
-vendor/lib/libfastcvopt.so
+-vendor/lib/libfastcvopt.so
 vendor/lib/mediadrm/libwvdrmengine.so
 vendor/lib/libsqcp.so
 vendor/lib/libI420colorconvert.so
@@ -1723,7 +1708,6 @@ vendor/lib/libswregistrationalgo.so
 vendor/lib/liboemcrypto.so
 vendor/lib/libOmxApeDec.so
 vendor/lib/android.hidl.base@1.0.so
-vendor/lib/libOmxVenc.so
 vendor/lib/libsdmextension.so
 vendor/lib/libtrustedapploader.so
 vendor/lib/libhdcp2p2prov.so
@@ -1783,7 +1767,6 @@ vendor/lib/libadpcmdec.so
 vendor/lib/libSecC2ComponentStore.so
 vendor/lib/libarcsoft_aieffectpk_video.so
 vendor/lib/libbatterylistener.so
-vendor/lib/libOmxVdec.so
 vendor/lib/libbt-hidlclient.so
 vendor/lib/libdrc.so
 vendor/lib/libdsi_netctrl.so
@@ -1816,7 +1799,6 @@ vendor/lib/libHpr_RecGAE_cvFeature_v1.0.camera.samsung.so
 vendor/lib/libssc.so
 vendor/lib/libarcsoft_object_tracking.so
 vendor/lib/libmdf.so
-vendor/lib/libOmxAacEnc.so
 vendor/lib/libc2d30_bltlib.so
 vendor/lib/libvkmanager_vendor.so
 vendor/lib/vendor.qti.memory.pasrmanager@1.0.so
@@ -1843,7 +1825,6 @@ vendor/lib/libspl.so
 vendor/lib/libcamxfdalgo.so
 vendor/lib/ftm_fm_lib.so
 vendor/lib/libhdcpsrm.so
-vendor/lib/libOmxG711Enc.so
 vendor/lib/libgeofencing.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 vendor/lib/libswldc_capture_core.camera.samsung.so
@@ -1883,7 +1864,6 @@ vendor/lib/libsdsprpc.so
 vendor/lib/libsoc_helper.so
 vendor/lib/libObjectDetector_v1.camera.samsung.so
 vendor/lib/librecordalive.so
-vendor/lib/libOmxEvrcEnc.so
 vendor/lib/libchilog.so
 vendor/lib/libqcc_file_agent.so
 vendor/lib/libface3d_dev.so
@@ -2028,7 +2008,6 @@ vendor/bin/hw/vendor.samsung.hardware.security.drk@2.0-service
 vendor/bin/hw/vendor.samsung.hardware.security.hdcp.keyprovisioning@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.hyper-service
 vendor/bin/hw/vendor.samsung.hardware.camera.provider@4.0-service_64
-vendor/bin/hw/hostapd
 vendor/bin/hw/android.hardware.power.samsung-service
 vendor/bin/hw/vendor.samsung.hardware.tlc.blockchain@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.vibrator@2.1-service
@@ -2124,6 +2103,5 @@ vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service
 vendor/bin/vendor.qti.hardware.soter@1.0-provision
 vendor/bin/ipacm-diag
 vendor/bin/npu_launcher
-vendor/bin/hostapd_cli
 vendor/bin/init.qcom.early_boot.sh
 vendor/bin/vendor.samsung.hardware.security.wsm@1.0-service
