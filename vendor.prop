@@ -183,7 +183,6 @@ vendor.gralloc.disable_ubwc=0
 
 # Incremental FS
 ro.crypto.allow_encrypt_override=true
-ro.crypto.volume.metadata.method=dm-default-key
 ro.incremental.enable=1
 
 # Keymaster

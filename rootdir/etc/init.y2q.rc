@@ -33,13 +33,20 @@ on post-fs
     chown radio system /efs/carrier/HiddenMenu
 
 #mDNIe
-    mkdir /efs/afc 0750 system system
-    chmod 750 /efs/afc
-    chown system system /dev/mafpc
-    chmod 0660 /dev/mafpc
+	mkdir /efs/afc 0750 system system
+	chmod 750 /efs/afc
+	chown system system /dev/mafpc
+	chmod 0660 /dev/mafpc
     exec - system system -- /system/bin/mafpc_write
 
 on post-fs-data
+    # Samsung Pay
+    mkdir /efs/pfw_data 0760 vendor_spay vendor_spay
+
+    # MST/NFC Switch
+    chown vendor_spay system /dev/mst_ctrl
+    chmod 0660 /dev/mst_ctrl
+
 # Cirrus Amp Calibration
     chown system audio /sys/class/cirrus/cirrus_cal/status
     chown system audio /sys/class/cirrus/cirrus_cal/rdc
@@ -151,6 +158,16 @@ on boot
     chmod 0664 /dev/cpuset/abnormal/tasks
     chmod 0664 /dev/cpuset/abnormal/cpus
 
+    mkdir /dev/cpuset/moderate
+    write /dev/cpuset/moderate/cpus 0-2,4-6
+    copy /dev/cpuset/mems /dev/cpuset/moderate/mems
+
+    chown system system /dev/cpuset/moderate
+    chown system system /dev/cpuset/moderate/tasks
+    chown system system /dev/cpuset/moderate/cpus
+    chmod 0664 /dev/cpuset/moderate/tasks
+    chmod 0664 /dev/cpuset/moderate/cpus
+
 # SSWAP
 service swapon /system/bin/sswap -s -z -f 2560
     class core
@@ -181,7 +198,7 @@ service heimdalld /system/bin/heimdalld
     group system readproc
     capabilities NET_ADMIN SYS_NICE KILL CHOWN
     oneshot
-
+	
 # some priv-apps of SPR bind mount to TMB priv-apps
 on post-fs-data && property:ro.csc.sales_code=TMB
     umount /system/carrier

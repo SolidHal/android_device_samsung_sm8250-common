@@ -299,7 +299,7 @@ on init
 
 	chown system system /sys/class/lcd/panel1/poc_info
 	chmod 0440 /sys/class/lcd/panel1/poc_info
-	
+
 # POC OFF
 	chown system system /sys/class/lcd/panel/poc_onoff
 	chmod 0660 /sys/class/lcd/panel/poc_onoff
@@ -425,7 +425,7 @@ on init
 	chown system system /sys/class/lcd/panel/actual_mask_brightness
 	chmod 0660 /sys/class/lcd/panel/actual_mask_brightness
 
-# UB CONN DET 
+# UB CONN DET
 	chown system system /sys/class/lcd/panel/conn_det
 	chmod 0660 /sys/class/lcd/panel/conn_det
 
@@ -469,7 +469,7 @@ on init
 	chown system system /sys/class/lcd/panel/motto/emphasis
 	chmod 0660 /sys/class/lcd/panel/motto/emphasis
 
-# ioctl_power_ctrl  
+# ioctl_power_ctrl
 	chown system system /sys/class/lcd/panel/ioctl_power_ctrl
 	chmod 0440 /sys/class/lcd/panel/ioctl_power_ctrl
 

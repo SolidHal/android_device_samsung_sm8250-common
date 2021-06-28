@@ -62,6 +62,9 @@ on charger && property:ro.debuggable=1
     setprop sys.usb.config adb
     setprop sys.usb.configfs 1
 
+#on init
+#    exec u:r:vendor-qti-testscripts:s0 -- /vendor/bin/sh /vendor/bin/init.qti.usb.debug.sh
+
 on boot
     mount configfs none /config
     mkdir /config/usb_gadget/g1
@@ -512,6 +515,7 @@ on property:sys.usb.ffs.ready=1 && property:sys.usb.config=mtp,categories,conn_g
     symlink /config/usb_gadget/g1/functions/ffs.adb /config/usb_gadget/g1/configs/b.1/f4
     write /config/usb_gadget/g1/UDC ${sys.usb.controller}
     setprop sys.usb.state ${sys.usb.config}
+#]
 
 on property:sys.usb.config=ptp && property:sys.usb.configfs=1
     rm /config/usb_gadget/g1/configs/b.1/f1

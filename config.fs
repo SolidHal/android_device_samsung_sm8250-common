@@ -124,12 +124,6 @@ user: AID_SYSTEM
 group: AID_SYSTEM
 caps: 0
 
-[metadata/]
-mode: 0771
-user: AID_ROOT
-group: AID_SYSTEM
-caps: 0
-
 [optics/]
 mode: 0771
 user: AID_ROOT
@@ -152,6 +146,13 @@ caps: 0
 mode: 0770
 user: AID_SYSTEM
 group: AID_SYSTEM
+caps: 0
+
+
+[cache/]
+mode: 0771
+user: AID_CACHE
+group: AID_CACHE
 caps: 0
 
 [vendor/firmware_mnt/image/*]

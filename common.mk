@@ -210,6 +210,12 @@ PRODUCT_PACKAGES += \
     Snap \
     vendor.qti.hardware.camera.postproc@1.0.vendor:64
 
+
+# Main init and fstab
+PRODUCT_PACKAGES += \
+    init.qcom.rc.sys \
+    fstab.qcom
+
 # Common init scripts
 PRODUCT_PACKAGES += \
     init.class_main.sh \
@@ -233,7 +239,15 @@ PRODUCT_PACKAGES += \
     init.samsung.rc \
     init.target.rc \
     init.y2q.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    init.crda.sh \
+    init.qcom.coex.sh \
+    init.qcom.efs.sync.sh \
+    init.qcom.sdio.sh \
+    init.qti.chg_policy.sh \
+    init.qti.media.sh \
+    init.qti.qcv.sh \
+    init.qti.fm.sh
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -342,7 +356,10 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    libhwbinder.vendor
+    libhwbinder.vendor \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
