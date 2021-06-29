@@ -238,7 +238,7 @@ PRODUCT_PACKAGES += \
     init.samsung.eif.rc \
     init.samsung.rc \
     init.target.rc \
-    init.y2q.rc \
+    init.x1q.rc \
     ueventd.qcom.rc \
     init.crda.sh \
     init.qcom.coex.sh \
