@@ -1,0 +1,9 @@
+<compatibility-matrix version="2.0" type="framework">
+    <hal format="aidl" optional="true">
+        <name>vendor.samsung.hardware.hyper</name>
+        <interface>
+            <name>ISehHyPer</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>

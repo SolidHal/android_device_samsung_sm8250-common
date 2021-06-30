@@ -77,7 +77,8 @@ TARGET_SEC_FP_CALL_NOTIFY_ON_CANCEL := true
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
     $(COMMON_PATH)/device_framework_matrix.xml \
-    $(COMMON_PATH)/samsung_device_framework_matrix.xml
+    $(COMMON_PATH)/samsung_device_framework_matrix.xml \
+    $(COMMON_PATH)/aidl_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += \
     $(COMMON_PATH)/manifest.xml \
     $(COMMON_PATH)/samsung_manifest.xml
