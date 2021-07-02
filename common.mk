@@ -97,21 +97,21 @@ PRODUCT_COPY_FILES += \
     vendor/lineage/config/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.lineage.biometrics.fingerprint.inscreen.xml
 
 # A/B
-AB_OTA_POSTINSTALL_CONFIG += \
-    RUN_POSTINSTALL_system=true \
-    POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=ext4 \
-    POSTINSTALL_OPTIONAL_system=true
+# AB_OTA_POSTINSTALL_CONFIG += \
+#     RUN_POSTINSTALL_system=true \
+#     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
+#     FILESYSTEM_TYPE_system=ext4 \
+#     POSTINSTALL_OPTIONAL_system=true
 
-AB_OTA_POSTINSTALL_CONFIG += \
-    RUN_POSTINSTALL_vendor=true \
-    POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
-    FILESYSTEM_TYPE_vendor=ext4 \
-    POSTINSTALL_OPTIONAL_vendor=true
+# AB_OTA_POSTINSTALL_CONFIG += \
+#     RUN_POSTINSTALL_vendor=true \
+#     POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
+#     FILESYSTEM_TYPE_vendor=ext4 \
+#     POSTINSTALL_OPTIONAL_vendor=true
 
-PRODUCT_PACKAGES += \
-    checkpoint_gc \
-    otapreopt_script
+# PRODUCT_PACKAGES += \
+#     checkpoint_gc \
+#     otapreopt_script
 
 # ANT+
 PRODUCT_PACKAGES += \
@@ -215,6 +215,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.qcom.rc.sys \
     fstab.qcom
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.qcom
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
 # Common init scripts
 PRODUCT_PACKAGES += \
@@ -459,6 +464,7 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Partitions
+#TODO: this seems wrong!!!!????!!!
 PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
@@ -498,6 +504,11 @@ PRODUCT_PACKAGES += \
     com.android.ims.rcsmanager \
     PresencePolling \
     RcsService
+
+# Recovery
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:$(TARGET_COPY_OUT_ROOT)/init.recovery.qcom.rc
+
 
 # RenderScript HAL
 PRODUCT_PACKAGES += \
