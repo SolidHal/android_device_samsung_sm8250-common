@@ -464,8 +464,6 @@ PRODUCT_PACKAGES += \
     libstagefrighthw
 
 # Partitions
-#TODO: this seems wrong!!!!????!!!
-PRODUCT_BUILD_SUPER_PARTITION := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Power
