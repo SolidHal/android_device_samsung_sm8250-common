@@ -186,13 +186,13 @@ PRODUCT_PACKAGES += \
     com.qualcomm.qti.bluetooth_audio@1.0 \
     liba2dpoffload \
     libbtconfigstore \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor:64 \
-    vendor.qti.hardware.btconfigstore@1.0.vendor:64 \
-    vendor.qti.hardware.btconfigstore@2.0.vendor:64
+    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0.vendor
 
 # Boot control
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.1-impl-qti:64 \
+    android.hardware.boot@1.1-impl-qti \
     android.hardware.boot@1.1-impl-qti.recovery \
     android.hardware.boot@1.1-service \
     bootctrl.kona \
@@ -203,12 +203,12 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl:64 \
+    android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service_64 \
     libcamera2ndk_vendor \
     libgui_vendor \
     Snap \
-    vendor.qti.hardware.camera.postproc@1.0.vendor:64
+    vendor.qti.hardware.camera.postproc@1.0.vendor
 
 
 # Main init and fstab
@@ -297,30 +297,32 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.1.vendor \
     vendor.display.config@1.2.vendor \
     vendor.display.config@1.3.vendor \
-    vendor.display.config@1.4.vendor:64 \
-    vendor.display.config@1.5.vendor:64 \
-    vendor.display.config@1.6.vendor:64 \
-    vendor.display.config@1.7.vendor:64 \
-    vendor.display.config@1.8.vendor:64 \
-    vendor.display.config@1.9.vendor:64 \
-    vendor.display.config@1.10.vendor:64 \
-    vendor.display.config@1.11.vendor:64 \
-    vendor.display.config@1.12.vendor:64 \
-    vendor.display.config@1.13.vendor:64 \
-    vendor.display.config@1.14.vendor:64 \
-    vendor.display.config@1.15.vendor:64 \
+    vendor.display.config@1.4.vendor \
+    vendor.display.config@1.5.vendor \
+    vendor.display.config@1.6.vendor \
+    vendor.display.config@1.7.vendor \
+    vendor.display.config@1.8.vendor \
+    vendor.display.config@1.9.vendor \
+    vendor.display.config@1.10.vendor \
+    vendor.display.config@1.11.vendor \
+    vendor.display.config@1.12.vendor \
+    vendor.display.config@1.13.vendor \
+    vendor.display.config@1.14.vendor \
+    vendor.display.config@1.15.vendor \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor:32 \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.composer-service \
-    vendor.qti.hardware.display.mapper@1.0.vendor:64 \
-    vendor.qti.hardware.display.mapper@1.1.vendor:64 \
-    vendor.qti.hardware.display.mapper@2.0.vendor:64 \
-    vendor.qti.hardware.display.mapper@3.0.vendor:64 \
-    vendor.qti.hardware.display.mapper@4.0.vendor:64
+    vendor.qti.hardware.display.mapper@1.0.vendor \
+    vendor.qti.hardware.display.mapper@1.1.vendor \
+    vendor.qti.hardware.display.mapper@2.0.vendor \
+    vendor.qti.hardware.display.mapper@3.0.vendor \
+    vendor.qti.hardware.display.mapper@4.0.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
+    android.hardware.drm@1.0-impl \
+    android.hardware.drm@1.0-service \
     android.hardware.drm@1.3-service.clearkey
 
 # Fastbootd
@@ -356,7 +358,7 @@ PRODUCT_COPY_FILES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl:64 \
+    android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
 # HIDL
@@ -388,7 +390,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-impl:64 \
+    android.hardware.light@2.0-impl \
     android.hardware.light@2.0-service.samsung \
     lights.kona
 
@@ -431,9 +433,9 @@ PRODUCT_PACKAGES += \
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc@1.2-service.samsung \
-    android.hardware.secure_element@1.0:64 \
-    android.hardware.secure_element@1.1:64 \
-    android.hardware.secure_element@1.2:64 \
+    android.hardware.secure_element@1.0 \
+    android.hardware.secure_element@1.1 \
+    android.hardware.secure_element@1.2 \
     com.android.nfc_extras \
     libchrome.vendor \
     libnfc-nci \
@@ -469,9 +471,9 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.samsung-libperfmgr \
-    vendor.qti.hardware.perf@2.0.vendor:64 \
-    vendor.qti.hardware.perf@2.1.vendor:64 \
-    vendor.qti.hardware.perf@2.2.vendor:64
+    vendor.qti.hardware.perf@2.0.vendor \
+    vendor.qti.hardware.perf@2.1.vendor \
+    vendor.qti.hardware.perf@2.2.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -535,7 +537,7 @@ PRODUCT_PACKAGES += \
 
 # Servicetracker
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.servicetracker@1.2.vendor:64
+    vendor.qti.hardware.servicetracker@1.2.vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
