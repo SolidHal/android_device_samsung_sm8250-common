@@ -340,11 +340,6 @@ PRODUCT_PACKAGES += \
     fingerprint.default \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.samsung
 
-# Gatekeeper
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-service
-
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
