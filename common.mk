@@ -259,11 +259,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.capabilityconfigstore@1.0
 
-# Consumer IR
-PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-impl \
-    android.hardware.ir@1.0-service.samsung
-
 # Cryptfs
 PRODUCT_PACKAGES += \
     libcryptfs_hw \
@@ -382,8 +377,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-impl \
-    android.hardware.light@2.0-service.samsung \
+    android.hardware.light@2.0 \
     lights.kona
 
 # LiveDisplay
