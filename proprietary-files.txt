@@ -744,7 +744,6 @@ vendor/saiv/image_understanding/db/slens_detector/slens_detector_cnn.dlc
 vendor/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn.dlc
 vendor/saiv/image_understanding/db/aic_classifier/aic_classifier_cnn.info
 vendor/etc/nfc/libnfc-nxp_RF.conf
-vendor/etc/powerhint.xml
 vendor/etc/data/netmgr_config.xml
 vendor/etc/data/dsi_config.xml
 vendor/etc/audio_platform_info_diff.xml
@@ -1797,6 +1796,7 @@ vendor/bin/subsystem_ramdump
 vendor/bin/vendor.samsung.hardware.security.widevine.keyprov@1.0-service
 vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
 vendor/bin/hw/vendor.samsung.hardware.miscpower@2.0-service
+vendor/bin/hw/android.hardware.power.samsung-service
 vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/bin/hw/vendor.samsung.hardware.sysinput@1.0-service
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
