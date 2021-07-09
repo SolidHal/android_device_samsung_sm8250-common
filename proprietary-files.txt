@@ -826,7 +826,6 @@ vendor/etc/media_codecs_dolby_audio.xml
 vendor/etc/plmn_delta_usagsm.bin
 vendor/etc/media_codecs_google_video_le.xml
 vendor/etc/media_profiles_vendor.xml
--vendor/etc/vintf/manifest/power-samsung.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.tima@1.0-manifest.xml
 -vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.hqm@1.0-manifest.xml
