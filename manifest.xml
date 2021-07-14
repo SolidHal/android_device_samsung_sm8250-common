@@ -71,6 +71,7 @@
             <name>ICameraProvider</name>
             <instance>legacy/0</instance>
         </interface>
+        <fqname>@2.6::ICameraProvider/legacy/0</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.dumpstate</name>
@@ -142,8 +143,12 @@
     <hal format="hidl" override="true">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
-        <fqname>@1.5::IRadio/slot1</fqname>
+    </hal>
+    <hal format="hidl" override="true">
+        <name>android.hardware.radio</name>
+        <transport>hwbinder</transport>
         <fqname>@1.2::ISap/slot1</fqname>
+        <fqname>@1.4::IRadio/slot1</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>android.hardware.radio.config</name>
@@ -153,6 +158,11 @@
             <name>IRadioConfig</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.1::IRadioConfig/default</fqname>
+    </hal>
+    <hal format="hidl" override="true">
+        <name>android.hardware.radio.deprecated</name>
+        <transport>hwbinder</transport>
     </hal>
     <hal format="hidl">
         <name>android.hardware.renderscript</name>
@@ -294,11 +304,7 @@
     <hal format="hidl" override="true">
         <name>vendor.qti.esepowermanager</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>IEsePowerManager</name>
-            <instance>default</instance>
-        </interface>
+        <version>1.0</version>
     </hal>
     <hal format="hidl">
         <name>android.hardware.power</name>
@@ -505,6 +511,7 @@
             <name>IQSEECom</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::IQSEECom/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.qteeconnector</name>
@@ -518,97 +525,44 @@
             <name>IGPAppConnector</name>
             <instance>default</instance>
         </interface>
+        <fqname>@1.0::IAppConnector/default</fqname>
+        <fqname>@1.0::IGPAppConnector/default</fqname>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.radio.am</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IQcRilAudio</name>
-            <instance>slot1</instance>
-        </interface>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.radio.ims</name>
         <transport>hwbinder</transport>
-        <version>1.7</version>
-        <interface>
-            <name>IImsRadio</name>
-            <instance>imsradio0</instance>
-        </interface>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.radio.internal.deviceinfo</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDeviceInfo</name>
-            <instance>deviceinfo</instance>
-        </interface>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.radio.lpa</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IUimLpa</name>
-            <instance>UimLpa0</instance>
-        </interface>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.radio.qcrilhook</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IQtiOemHook</name>
-            <instance>oemhook0</instance>
-        </interface>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.radio.qtiradio</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IQtiRadio</name>
-            <instance>slot1</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.qti.hardware.radio.qtiradio</name>
-        <transport>hwbinder</transport>
-        <version>2.6</version>
-        <interface>
-            <name>IQtiRadio</name>
-            <instance>slot1</instance>
-        </interface>
     </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.hardware.radio.uim</name>
         <transport>hwbinder</transport>
-        <version>1.2</version>
-        <interface>
-            <name>IUim</name>
-            <instance>Uim0</instance>
-        </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" override="true">
         <name>vendor.qti.hardware.radio.uim_remote_client</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IUimRemoteServiceClient</name>
-            <instance>uimRemoteClient0</instance>
-            <instance>uimRemoteClient1</instance>
-        </interface>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" override="true">
         <name>vendor.qti.hardware.radio.uim_remote_server</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IUimRemoteServiceServer</name>
-            <instance>uimRemoteServer0</instance>
-        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.sensorscalibrate</name>

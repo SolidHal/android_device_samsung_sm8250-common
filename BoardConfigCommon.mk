@@ -90,20 +90,6 @@ TARGET_KEYMASTER_VARIANT := samsung
 # Kernel
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 printk.devkmsg=on firmware_class.path=/vendor/firmware_mnt/image androidboot.selinux=permissive
-# BOARD_KERNEL_CMDLINE := \
-#     androidboot.boot_devices=soc/1d84000.ufshc \
-#     androidboot.console=ttyMSM0 \
-#     androidboot.hardware=qcom \
-#     androidboot.memcg=1 \
-#     androidboot.usbcontroller=a600000.dwc3 \
-#     firmware_class.path=/vendor/firmware_mnt/image \
-#     loop.max_part=7 \
-#     lpm_levels.sleep_disabled=1 \
-#     msm_rtb.filter=0x237 \
-#     printk.devkmsg=on \
-#     service_locator.enable=1 \
-#     swiotlb=2048 \
-# 		androidboot.selinux=permissive
 
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
@@ -154,6 +140,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 ### CACHE
 BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 
+### Metadata
+BOARD_USES_METADATA_PARTITION := true
+
 ### Dynamic Partitions
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 10288627712
 BOARD_SUPER_PARTITION_SIZE := 10292822016
@@ -169,6 +158,7 @@ endif
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := kona
+# TARGET_BOARD_PLATFORM_GPU := qcom-adreno650
 
 # Properties
 TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop

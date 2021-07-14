@@ -13,7 +13,7 @@ PRODUCT_PRODUCT_PROPERTIES += ro.apex.updatable=false
 endif
 
 # Enable virtual A/B OTA
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+# $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 # Include GSI keys
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
@@ -187,21 +187,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
-# Boot control
-PRODUCT_PACKAGES += \
-    android.hardware.boot@1.1-impl-qti \
-    android.hardware.boot@1.1-impl-qti.recovery \
-    android.hardware.boot@1.1-service \
-    bootctrl.kona \
-    bootctrl.kona.recovery
-
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl
-
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service_64 \
+    android.hardware.camera.provider@2.6-impl \
+    android.hardware.camera.provider@2.6-service_64 \
+    android.hardware.camera.provider@2.4-legacy \
+    android.hardware.camera.provider@2.5-legacy \
     libcamera2ndk_vendor \
     libgui_vendor \
     Snap \
@@ -220,17 +211,24 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     init.class_main.sh \
     init.mdm.sh \
+    init.crda.sh \
     init.qcom.class_core.sh \
+		init.qcom.coex.sh \
     init.qcom.early_boot.sh \
+    init.qcom.efs.sync.sh \
+    init.qti.media.sh \
     init.qcom.post_boot.sh \
+    init.qcom.sdio.sh \
     init.qcom.sensors.sh \
     init.qcom.sh \
     init.qcom.usb.sh \
+    init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
+    init.qti.qcv.sh \
     init.qti.fm.sh \
     init.nfc.samsung.rc \
-    init.qcom.factory.rc \
     init.qcom.rc \
+    init.qcom.factory.rc \
     init.qcom.usb.rc \
     init.recovery.qcom.rc \
     init.samsung.bsp.rc \
@@ -238,15 +236,11 @@ PRODUCT_PACKAGES += \
     init.samsung.eif.rc \
     init.samsung.rc \
     init.target.rc \
+    init.qti.fm.rc \
+    init.qti.media.rc \
+    init.qti.qcv.rc \
     init.x1q.rc \
-    ueventd.qcom.rc \
-    init.crda.sh \
-    init.qcom.coex.sh \
-    init.qcom.efs.sync.sh \
-    init.qcom.sdio.sh \
-    init.qti.chg_policy.sh \
-    init.qti.media.sh \
-    init.qti.qcv.sh \
+    ueventd.qcom.rc
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -494,7 +488,7 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.3-radio-service.samsung \
+    android.hardware.radio@1.4 \
     libprotobuf-cpp-full \
     librmnetctl \
     libxml2
@@ -556,15 +550,6 @@ PRODUCT_PACKAGES += \
 # Trust
 PRODUCT_PACKAGES += \
     vendor.lineage.trust@1.0-service
-
-# Update engine
-PRODUCT_PACKAGES += \
-    update_engine \
-    update_engine_sideload \
-    update_verifier
-
-PRODUCT_PACKAGES_DEBUG += \
-    update_engine_client
 
 # USB
 PRODUCT_PACKAGES += \

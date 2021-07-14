@@ -1,5 +1,5 @@
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp,conn_gadget \
+    persist.sys.usb.config=adb,mtp,conn_gadget \
     ro.adb.secure=1 \
     ro.oem_unlock_supported=1 \
     ro.radio.noril=no \

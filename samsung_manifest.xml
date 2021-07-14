@@ -97,6 +97,7 @@
             <name>ISehRadio</name>
             <instance>slot1</instance>
         </interface>
+        <fqname>@2.1::ISehRadio/slot1</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.radio.bridge</name>
@@ -106,6 +107,7 @@
             <name>ISehBridge</name>
             <instance>slot1</instance>
         </interface>
+        <fqname>@2.0::ISehBridge/slot1</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.radio.channel</name>
@@ -116,6 +118,8 @@
             <instance>epdgd</instance>
             <instance>imsd</instance>
         </interface>
+        <fqname>@2.0::ISehChannel/epdgd</fqname>
+        <fqname>@2.0::ISehChannel/imsd</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.security.widevine.keyprov</name>
