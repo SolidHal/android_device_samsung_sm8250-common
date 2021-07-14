@@ -195,8 +195,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-legacy \
     libcamera2ndk_vendor \
     libgui_vendor \
-    Snap \
-    vendor.qti.hardware.camera.postproc@1.0.vendor
+    Snap
 
 
 # Main init and fstab

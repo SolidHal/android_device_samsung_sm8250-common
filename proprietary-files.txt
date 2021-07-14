@@ -505,6 +505,7 @@ vendor/lib64/libqsocket.so
 vendor/lib64/vendor.display.postproc@1.0.so
 vendor/lib64/libdsutils.so
 vendor/lib64/libsecril-client.so
+vendor/lib64/libsecril.so
 vendor/lib64/libsevrc.so
 vendor/lib64/libizat_core.so
 vendor/lib64/libGPTEE_vendor.so
@@ -1492,6 +1493,7 @@ vendor/lib/vendor.display.postproc@1.0.so
 vendor/lib/libdsutils.so
 vendor/lib/lib_lvacfs.so
 vendor/lib/libsecril-client.so
+vendor/lib/libsecril.so
 vendor/lib/librilqmiservices-ext.so
 vendor/lib/libsevrc.so
 vendor/lib/libizat_core.so
@@ -2030,3 +2032,7 @@ system/lib/libtensorflowLite.camera.samsung.so
 system/lib/libsmart_cropping.camera.samsung.so
 system/lib/libEventDetector.camera.samsung.so
 system/lib/libFood.camera.samsung.so
+
+#ril
+system/etc/permissions/qcrilhook.xml
+system_ext/framework/qcrilhook.jar
