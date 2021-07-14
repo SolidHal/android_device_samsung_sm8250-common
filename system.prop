@@ -1,37 +1,14 @@
-# Samsung Specific Properties
-ro.build.PDA=G981U1UES1CUA2
-ro.build.official.release=true
-ro.build.2ndbrand=false
-ro.config.rm_preload_enabled=1
-ro.build.changelist=20642218
-ro.product_ship=true
-ro.user_trial=FALSE
-ro.hardware.chipname=SM8250
-ro.build.characteristics=nosdcard
-
-#Netflix custom property
-ro.netflix.bsp_rev=Q8250-19134-1
-
-#Status of softsim
-persist.sys.softsim.status=default,default
-persist.sys.softsim.netmode=4g
-persist.sys.softsim.type=default
-
-ro.treble.enabled=true
-ro.kernel.qemu=0
-net.bt.name=Android
-ro.vendor.qti.va_aosp.support=1
-ro.crypto.dm_default_key.options_format.version=2
-
-
+#
+# system/default.prop
+#
 ro.actionable_compatible_property.enabled=true
 ro.postinstall.fstab.prefix=/system
 ro.oem_unlock_supported=1
-ro.secure=0
+ro.secure=1
 security.perf_harden=1
 ro.adb.secure=1
 ro.allow.mock.location=0
-ro.debuggable=1
+ro.debuggable=0
 debug.atrace.tags.enableflags=0
 persist.traced.enable=1
 com.samsung.speg.disable=true
@@ -62,5 +39,42 @@ ro.telephony.default_cdma_sub=0
 ro.vendor.use_data_netmgrd=false
 ro.telephony.iwlan_operation_mode=legacy
 persist.radio.sib16_support=1
-persist.sys.usb.config=adb
+persist.sys.usb.config=none
+#
+# end system/default.prop
+#
 
+#
+# system/system/build.prop
+#
+
+#
+# from device/samsung/x1q/system.prop
+#
+#Netflix custom property
+ro.netflix.bsp_rev=Q8250-19134-1
+
+#Status of softsim
+persist.sys.softsim.status=default,default
+persist.sys.softsim.netmode=4g
+persist.sys.softsim.type=default
+# end of device/samsung/x1q/system.prop
+
+
+ro.treble.enabled=true
+ro.build.version.sem=3001
+ro.build.version.sep=120000
+persist.log.semlevel=0xFFFFFF00
+persist.log.level=0xFFFFFFFF
+ro.system.build.version.sehi=3001
+ro.build.selinux=1
+ro.config.iccc_version=3.0
+ro.config.dmverity=G
+ro.config.tima=1
+ro.config.timaversion=3.0
+ro.config.timaversion_info=Knox3.4_S.R.R
+ro.config.knox.ucm=1
+ro.config.knox=v30
+ro.kernel.qemu=0
+net.bt.name=Android
+ro.vendor.qti.va_aosp.support=1
