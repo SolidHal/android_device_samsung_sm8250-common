@@ -44,6 +44,15 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>android.hardware.gatekeeper</name>
+        <version>1.0</version>
+        <interface>
+            <name>IGatekeeper</name>
+            <instance>default</instance>
+            <instance>mdfpp</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>android.hardware.light</name>
         <version>2.0</version>
         <interface>
@@ -659,6 +668,14 @@
             <name>IQcRilAudio</name>
             <instance>slot1</instance>
             <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.qti.hardware.radio.atcmdfwd</name>
+        <version>1.0</version>
+        <interface>
+            <name>IAtCmdFwd</name>
+            <instance>AtCmdFwdService</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">

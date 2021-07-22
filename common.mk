@@ -189,10 +189,13 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.6-impl \
+    android.hardware.camera.provider@2.6 \
+    android.hardware.camera.provider@2.6-legacy \
     android.hardware.camera.provider@2.6-service_64 \
     android.hardware.camera.provider@2.4-legacy \
+    android.hardware.camera.provider@2.4 \
     android.hardware.camera.provider@2.5-legacy \
+    android.hardware.camera.provider@2.5 \
     libcamera2ndk_vendor \
     libgui_vendor \
     Snap
@@ -544,7 +547,7 @@ PRODUCT_COPY_FILES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0-service.samsung
+    android.hardware.thermal
 
 # Touch
 PRODUCT_PACKAGES += \
@@ -569,7 +572,6 @@ PRODUCT_PACKAGES += \
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.3-service.samsung \
     vibrator.default \
     vendor.qti.hardware.vibrator.service
 
