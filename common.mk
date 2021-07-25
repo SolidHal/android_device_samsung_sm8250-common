@@ -159,7 +159,37 @@ PRODUCT_PACKAGES += \
     libsndmonitor \
     libspkrprot \
     libvisualizer \
-    libvolumelistener
+    libvolumelistener \
+    libaudiofoundation \
+    libcodec2_hidl@1.1 \
+    libcodec2_sec_aacdec.so \
+    libcodec2_sec_aacenc.so \
+    libcodec2_sec_amrnbdec.so \
+    libcodec2_sec_amrwbdec.so \
+    libcodec2_sec_evrcdec.so \
+    libcodec2_sec_evrcenc.so \
+    libcodec2_sec_flacdec.so \
+    libcodec2_sec_imadec.so \
+    libcodec2_sec_mp3dec.so \
+    libcodec2_sec_mp43dec.so \
+    libcodec2_sec_mp4vdec.so \
+    libcodec2_sec_qcelpdec.so \
+    libcodec2_sec_qcelpenc.so \
+    libcodec2_sec_soft_common.so \
+    libcodec2_sec_vc1dec.so \
+    libcodec2_sec_wmadec.so \
+    libcodec2_sec_wmv7dec.so \
+    libcodec2_sec_wmv8dec.so \
+    libcodec2_simple_component.so \
+    libcodec2_soft_ac4dec.so \
+    libcodec2_soft_common.so \
+    libcodec2_soft_eac3dec.so
+    
+
+# Automotive/Gearhead
+PRODUCT_PACKAGES += \
+    android.hardware.automotive.vehicle@2.0 \
+    android.hardware.automotive.vehicle@2.0-manager-lib
 
 # Biometrics
 PRODUCT_PACKAGES += \
@@ -167,10 +197,14 @@ PRODUCT_PACKAGES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
+    android.hardware.bluetooth@1.0-service \
+    android.hardware.bluetooth@1.0-impl \
+    android.hardware.bluetooth.audio@2.0-impl \
     android.hardware.bluetooth.audio@2.0-impl:32 \
     audio.bluetooth.default \
     bt_configstore.conf \
     com.qualcomm.qti.bluetooth_audio@1.0 \
+    com.qualcomm.qti.bluetooth_audio@1.0:32 \
     liba2dpoffload \
     libbtconfigstore \
     vendor.qti.hardware.bluetooth_audio@2.0.vendor \
@@ -192,6 +226,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4 \
     android.hardware.camera.provider@2.5-legacy \
     android.hardware.camera.provider@2.5 \
+    vendor.qti.hardware.camera.postproc@1.0 \
     libcamera2ndk_vendor \
     libgui_vendor \
     Snap
@@ -224,6 +259,7 @@ PRODUCT_PACKAGES += \
     init.qti.dcvs.sh \
     init.qti.qcv.sh \
     init.qti.fm.sh \
+		init.qti.fm.sh_init \
     init.nfc.samsung.rc \
     init.qcom.rc \
     init.qcom.factory.rc \
@@ -294,14 +330,23 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.14.vendor \
     vendor.display.config@1.15.vendor \
     vendor.display.config@2.0 \
+    vendor.display.config@2.0.vendor \
     vendor.display.config@2.0.vendor:32 \
     vendor.qti.hardware.display.allocator-service \
+    vendor.qti.hardware.display.allocator@1.0 \
+    vendor.qti.hardware.display.allocator@3.0 \
     vendor.qti.hardware.display.composer-service \
+    vendor.qti.hardware.display.composer@1.0 \
+    vendor.qti.hardware.display.composer@2.0 \
     vendor.qti.hardware.display.mapper@1.0.vendor \
     vendor.qti.hardware.display.mapper@1.1.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor
+
+# Dumpstate
+PRODUCT_PACKAGES += \
+    android.hardware.dumpstate@1.1-service-lazy
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -321,6 +366,13 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service.samsung \
     fingerprint.default \
     vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.samsung
+
+# Gatekeeper
+PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0-service \
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-impl-qti \
+    android.hardware.secure_element@1.1-service
 
 # GPS
 
@@ -356,7 +408,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 		android.hardware.keymaster@4.0-service \
     libskeymaster4device \
-    libkeymaster4support
+    libkeymaster4support \
+    libkeymaster4_1support
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -415,7 +468,17 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libOmxVidcCommon \
-    libstagefrighthw
+    libstagefrighthw \
+    libstagefright \
+    libstagefright_soft_qtiflacdec \
+    libstagefright_flacdec \
+    libstagefright_soft_qtiflacdec \
+    libstagefright_soft_ddpdec  \
+    libstagefright_soft_ac4dec  \
+    libstagefright_omx_vendor \
+    libstagefright_bufferqueue_helper_vendor \
+    libsns_fastRPC_util
+    
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -428,7 +491,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.2.vendor
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
 
 # PowerShare
 PRODUCT_PACKAGES += \
@@ -482,7 +545,9 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.0-service.multihal \
     android.hardware.sensors@2.1-service.samsung-multihal \
+    android.hardware.sensors@2.0-ScopedWakelock \
     libsensorndkbridge
 
 # Servicetracker
@@ -493,7 +558,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/samsung/hidl/fastcharge \
-    hardware/samsung/nfc \
+    hardware/samsung/nfc
 
 # System Helper
 PRODUCT_PACKAGES += \
@@ -529,6 +594,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
+    android.hardware.usb@1.1-service \
     android.hardware.usb@1.2-service-qti \
     android.hardware.usb.gadget@1.0-service-qti
 
@@ -574,3 +640,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
+
+# XML
+PRODUCT_PACKAGES += \
+    libtinyxml2_1
