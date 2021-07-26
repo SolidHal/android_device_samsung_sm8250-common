@@ -39,7 +39,7 @@ ro.telephony.default_cdma_sub=0
 ro.vendor.use_data_netmgrd=false
 ro.telephony.iwlan_operation_mode=legacy
 persist.radio.sib16_support=1
-persist.sys.usb.config=none
+persist.sys.usb.config=mtp,conn_gadget,adb
 #
 # end system/default.prop
 #
