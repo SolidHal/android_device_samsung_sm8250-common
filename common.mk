@@ -184,7 +184,7 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_ac4dec.so \
     libcodec2_soft_common.so \
     libcodec2_soft_eac3dec.so
-    
+
 
 # Automotive/Gearhead
 PRODUCT_PACKAGES += \
@@ -213,20 +213,19 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    vendor.qti.hardware.camera \
     android.hardware.camera.common@1.0 \
     android.hardware.camera.device@1.0 \
     android.hardware.camera.device@3.2 \
     android.hardware.camera.device@3.3 \
     android.hardware.camera.device@3.4 \
+    android.hardware.camera.device@3.5 \
     android.hardware.camera.device@3.6 \
-    android.hardware.camera.provider@2.6 \
-    android.hardware.camera.provider@2.6-legacy \
-    android.hardware.camera.provider@2.6-service_64 \
-    android.hardware.camera.provider@2.4-legacy \
     android.hardware.camera.provider@2.4 \
-    android.hardware.camera.provider@2.5-legacy \
+    android.hardware.camera.provider@2.6 \
     android.hardware.camera.provider@2.5 \
-    vendor.qti.hardware.camera.postproc@1.0 \
+    android.hardware.camera.provider@2.4-legacy \
+    android.hardware.camera.provider@2.5-legacy \
     libcamera2ndk_vendor \
     libgui_vendor \
     Snap
@@ -313,6 +312,12 @@ PRODUCT_PACKAGES += \
     libvulkan \
     memtrack.kona \
     vendor.display.config@1.0 \
+    vendor.display.config@1.1 \
+    vendor.display.config@1.2 \
+    vendor.display.config@1.3 \
+    vendor.display.config@1.4 \
+    vendor.display.config@1.5 \
+    vendor.display.config@2.0 \
     vendor.display.config@1.0.vendor \
     vendor.display.config@1.1.vendor \
     vendor.display.config@1.2.vendor \
@@ -325,13 +330,9 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.9.vendor \
     vendor.display.config@1.10.vendor \
     vendor.display.config@1.11.vendor \
-    vendor.display.config@1.12.vendor \
-    vendor.display.config@1.13.vendor \
-    vendor.display.config@1.14.vendor \
-    vendor.display.config@1.15.vendor \
-    vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor \
     vendor.display.config@2.0.vendor:32 \
+    vendor.qti.hardware.display \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.allocator@1.0 \
     vendor.qti.hardware.display.allocator@3.0 \
@@ -371,15 +372,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-impl-qti \
-    android.hardware.secure_element@1.1-service
+    android.hardware.gatekeeper@1.0-impl-qti
 
 # GPS
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl \
-    android.hardware.health@2.1-service
+    android.hardware.health@2.1
 
 # HIDL
 PRODUCT_PACKAGES += \
@@ -417,8 +416,8 @@ PRODUCT_PACKAGES += \
     lights.kona
 
 # LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.0-service.samsung-qcom
+# PRODUCT_PACKAGES += \
+#     vendor.lineage.livedisplay@2.0-service.samsung-qcom
 
 # Media
 
@@ -432,21 +431,19 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 # NFC
-PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service.samsung \
-    android.hardware.secure_element@1.0 \
-    android.hardware.secure_element@1.1 \
-    android.hardware.secure_element@1.2 \
-    com.android.nfc_extras \
-    libchrome.vendor \
-    libnfc-nci \
-    libnfc_nci_jni \
-    NfcNci \
-    SecureElement \
-    Tag
+# PRODUCT_PACKAGES += \
+#     com.android.nfc_extras \
+#     libchrome.vendor \
+#     libnfc-nci \
+#     libnfc_nci_jni \
+#     NfcNci \
+#     Tag
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf
+# Secure Element
+# PRODUCT_PACKAGES += \
+#     SecureElement \
+#     android.hardware.secure_element@1.1-service
+
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -478,7 +475,7 @@ PRODUCT_PACKAGES += \
     libstagefright_omx_vendor \
     libstagefright_bufferqueue_helper_vendor \
     libsns_fastRPC_util
-    
+
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -488,7 +485,8 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
     vendor.qti.hardware.perf@2.0.vendor \
     vendor.qti.hardware.perf@2.1.vendor \
-    vendor.qti.hardware.perf@2.2.vendor
+    vendor.qti.hardware.perf@2.2.vendor \
+    vendor.qti.hardware.perf@2.2
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
@@ -526,6 +524,7 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    libsecril-client \
     android.hardware.radio@1.0 \
     android.hardware.radio@1.1 \
     android.hardware.radio@1.2 \
@@ -545,8 +544,11 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0 \
+    android.hardware.sensors@2.0 \
+    android.hardware.sensors@2.1 \
+    android.hardware.sensors@2.0-multihal \
     android.hardware.sensors@2.0-service.multihal \
-    android.hardware.sensors@2.1-service.samsung-multihal \
     android.hardware.sensors@2.0-ScopedWakelock \
     libsensorndkbridge
 
@@ -558,7 +560,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/samsung/hidl/fastcharge \
-    hardware/samsung/nfc
+    hardware/samsung/ril/libsecril-client
 
 # System Helper
 PRODUCT_PACKAGES += \
@@ -584,7 +586,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal
 
-# Touch
+## Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.samsung
 
@@ -644,3 +646,8 @@ PRODUCT_PACKAGES += \
 # XML
 PRODUCT_PACKAGES += \
     libtinyxml2_1
+
+# Consumer IR
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-impl \
+    android.hardware.ir@1.0-service.samsung
