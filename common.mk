@@ -21,6 +21,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Get non-open-source specific aspects
 $(call inherit-product, vendor/samsung/sm8250-common/sm8250-common-vendor.mk)
 
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/samsung/hidl/fastcharge \
+    hardware/samsung/ril/libsecril-client \
+    $(LOCAL_PATH)/power-libperfmgr \
+    $(LOCAL_PATH)/libperfmgr \
+    vendor/qcom/opensource/interfaces/camera/postproc/1.0 \
+
 # Additional native libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
@@ -226,6 +236,8 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5 \
     android.hardware.camera.provider@2.4-legacy \
     android.hardware.camera.provider@2.5-legacy \
+    vendor.qti.hardware.camera.postproc@1.0 \
+    vendor.qti.hardware.camera.postproc@1.0.vendor \
     libcamera2ndk_vendor \
     libgui_vendor \
     Snap
@@ -245,7 +257,7 @@ PRODUCT_PACKAGES += \
     init.mdm.sh \
     init.crda.sh \
     init.qcom.class_core.sh \
-		init.qcom.coex.sh \
+    init.qcom.coex.sh \
     init.qcom.early_boot.sh \
     init.qcom.efs.sync.sh \
     init.qti.media.sh \
@@ -258,7 +270,7 @@ PRODUCT_PACKAGES += \
     init.qti.dcvs.sh \
     init.qti.qcv.sh \
     init.qti.fm.sh \
-		init.qti.fm.sh_init \
+    init.qti.fm.sh_init \
     init.nfc.samsung.rc \
     init.qcom.rc \
     init.qcom.factory.rc \
@@ -335,10 +347,14 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.allocator@1.0 \
+    vendor.qti.hardware.display.allocator@1.0.vendor \
     vendor.qti.hardware.display.allocator@3.0 \
+    vendor.qti.hardware.display.allocator@3.0.vendor \
     vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.display.composer@1.0 \
+    vendor.qti.hardware.display.composer@1.0.vendor \
     vendor.qti.hardware.display.composer@2.0 \
+    vendor.qti.hardware.display.composer@2.0.vendor \
     vendor.qti.hardware.display.mapper@1.0.vendor \
     vendor.qti.hardware.display.mapper@1.1.vendor \
     vendor.qti.hardware.display.mapper@2.0.vendor \
@@ -372,7 +388,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service \
     android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-impl-qti
+    android.hardware.gatekeeper@1.0-impl-qti \
 
 # GPS
 
@@ -389,12 +405,8 @@ PRODUCT_PACKAGES += \
 
 # HotwordEnrollement app permissions
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
+$(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
-# Input
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
-    $(LOCAL_PATH)/keylayout/sec_touchscreen.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/sec_touchscreen.kl
 
 # IPACM
 PRODUCT_PACKAGES += \
@@ -408,7 +420,8 @@ PRODUCT_PACKAGES += \
 		android.hardware.keymaster@4.0-service \
     libskeymaster4device \
     libkeymaster4support \
-    libkeymaster4_1support
+    libkeymaster4_1support \
+    libkeymaster4_1support.vendor
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -433,24 +446,29 @@ PRODUCT_PACKAGES += \
 # NFC
 # PRODUCT_PACKAGES += \
 #     com.android.nfc_extras \
-#     libchrome.vendor \
 #     libnfc-nci \
 #     libnfc_nci_jni \
 #     NfcNci \
 #     Tag
 
-# Secure Element
-# PRODUCT_PACKAGES += \
-#     SecureElement \
-#     android.hardware.secure_element@1.1-service
-
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.0 \
+    android.hardware.secure_element@1.1 \
+    ese_spi_nxp-sm8250 \
+    vendor.nxp.nxpese@1.0 \
+    vendor.nxp.nxpnfc@1.0 \
+    libchrome.vendor \
+    libnfc-nci \
+    libnfc_nci_jni \
+    android.hardware.secure_element@1.1-service-sm8250 \
+    android.hardware.secure_element@1.1-service-sm8250.rc
 
 # OMX
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service \
     android.hardware.media.c2@1.0 \
     android.hardware.media.c2@1.1 \
-		android.hardware.media.bufferpool@2.0 \
+    android.hardware.media.bufferpool@2.0 \
     android.hardware.media@1.0 \
     libc2dcolorconvert \
     libcodec2_hidl@1.0.vendor \
@@ -482,22 +500,30 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
+    android.hardware.power@1.3-service.samsung-libperfmgr-sm8250 \
+    libperfmgr.vendor \
+    android.hardware.power@1.0 \
+    android.hardware.power@1.1 \
+    android.hardware.power@1.2 \
+    android.hardware.power@1.3 \
     vendor.qti.hardware.perf@2.0.vendor \
     vendor.qti.hardware.perf@2.1.vendor \
     vendor.qti.hardware.perf@2.2.vendor \
     vendor.qti.hardware.perf@2.2
 
+
+    # android.hardware.power@1.2-service-qti \
+# PRODUCT_COPY_FILES += \
+#     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+
+
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # PowerShare
 PRODUCT_PACKAGES += \
     vendor.lineage.powershare@1.0-service.samsung
 
-# Properties
--include $(LOCAL_PATH)/default_prop.mk
-PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
 
 # Protobuf
 PRODUCT_PACKAGES += \
@@ -506,7 +532,7 @@ PRODUCT_PACKAGES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libjson \
+     libjson \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
@@ -536,31 +562,27 @@ PRODUCT_PACKAGES += \
     libxml2
 
 # Samsung App
-PRODUCT_PACKAGES += \
-    AdvancedDisplay \
-    SamsungDoze
+# PRODUCT_PACKAGES += \
+#     AdvancedDisplay \
+#     SamsungDoze
 
 # Seccomp policy
 
 # Sensors
 PRODUCT_PACKAGES += \
+    libsensorndkbridge \
     android.hardware.sensors@1.0 \
     android.hardware.sensors@2.0 \
     android.hardware.sensors@2.1 \
     android.hardware.sensors@2.0-multihal \
     android.hardware.sensors@2.0-service.multihal \
-    android.hardware.sensors@2.0-ScopedWakelock \
-    libsensorndkbridge
+    android.hardware.sensors@1.0-impl.samsung-sm8250 \
+    android.hardware.sensors@2.0-ScopedWakelock
 
 # Servicetracker
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.servicetracker@1.2.vendor
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH) \
-    hardware/samsung/hidl/fastcharge \
-    hardware/samsung/ril/libsecril-client
 
 # System Helper
 PRODUCT_PACKAGES += \
@@ -651,3 +673,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service.samsung
+
+# Properties
+-include $(LOCAL_PATH)/default_prop.mk
+PRODUCT_COMPATIBLE_PROPERTY_OVERRIDE := true
+

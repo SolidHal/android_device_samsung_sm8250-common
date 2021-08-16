@@ -68,8 +68,9 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="true">
+    <hal format="hidl" optional="true">
         <name>android.hardware.power</name>
+        <version>1.2</version>
         <interface>
             <name>IPower</name>
             <instance>default</instance>
@@ -95,6 +96,14 @@
         <interface>
             <name>IRadioConfig</name>
             <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>android.hardware.secure_element</name>
+        <version>1.1</version>
+        <interface>
+            <name>ISecureElement</name>
+            <instance>eSE1</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
