@@ -1,4 +1,0 @@
-service vendor.secure_element_hal_service /vendor/bin/hw/android.hardware.secure_element@1.1-service-sm8250
-    class hal
-    user system
-    group system

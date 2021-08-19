@@ -19,11 +19,9 @@ vendor/lib64/libgcs.so
 vendor/lib64/vendor.samsung.hardware.tlc.ucm@2.0.so
 vendor/lib64/vendor.qti.gnss@1.1.so
 vendor/lib64/libsnpe_dsp_domains_v2.so
-vendor/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
 vendor/lib64/vendor.samsung.hardware.tlc.atn@1.0-impl.so
 vendor/lib64/vendor.samsung.frameworks.security.ucm.crypto@1.0.so
 vendor/lib64/libvppimmotion.so
-vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/libFace3DTA.so
 vendor/lib64/libsecnativefeature.so
@@ -71,7 +69,6 @@ vendor/lib64/libtriplecam_image_optical_zoom.so
 vendor/lib64/libucm_tlc_tz_esecomm.so
 vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so
 vendor/lib64/libizat_client_api.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/libtlc_direct_comm_atn.so
 vendor/lib64/libthirdparty_zoomtranslator_imp.so
 -vendor/lib64/libthermalclient.so
@@ -159,7 +156,6 @@ vendor/lib64/libhta.so
 vendor/lib64/libPersonal_interface.so
 vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/vendor.samsung.hardware.security.engmode@1.0.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/libsomxadpcmd.so
 vendor/lib64/libsdm-colormgr-algo.so
 vendor/lib64/libmdmdetect.so
@@ -169,10 +165,10 @@ vendor/lib64/libvpphcp.so
 vendor/lib64/hw/audio.sec_primary.default.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so
 vendor/lib64/hw/sound_trigger.primary.kona.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
+vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/vendor.samsung.hardware.audio@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
@@ -181,11 +177,9 @@ vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/vendor.samsung.hardware.camera.provider@4.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
-vendor/lib64/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
 vendor/lib64/hw/vulkan.adreno.so
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib64/hw/vendor.samsung.hardware.snap@1.1-impl.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-samsung.so
@@ -197,7 +191,6 @@ vendor/lib64/libnpu.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/libsecaudioinfo.so
 vendor/lib64/libmediaconverter.so
-vendor/lib64/libqti-perfd-client.so
 vendor/lib64/libqmi_legacy.so
 vendor/lib64/libcamxncs.so
 vendor/lib64/com.qti.feature2.anchorsync.so
@@ -344,7 +337,6 @@ vendor/lib64/vendor.samsung.camera.device@5.0-impl.so
 vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/vendor.qti.spu@1.0.so
 vendor/lib64/libsomxmp4vdsw.so
-vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so
 vendor/lib64/vendor.qti.hardware.vpp@1.1.so
 vendor/lib64/com.qualcomm.qti.imscmservice@2.2.so
@@ -816,7 +808,6 @@ vendor/etc/mixer_usb_default.xml
 vendor/etc/audconf/OPEN/Codec_cal.acdb
 vendor/etc/audconf/OPEN/Handset_cal.acdb
 vendor/etc/audconf/OPEN/Global_cal.acdb
-vendor/etc/audconf/OPEN/Bluetooth_cal.acdb
 vendor/etc/audconf/OPEN/workspaceFile.qwsp
 vendor/etc/audconf/OPEN/Speaker_cal.acdb
 vendor/etc/audconf/OPEN/Hdmi_cal.acdb
@@ -826,8 +817,6 @@ vendor/etc/public.libraries.txt
 vendor/etc/mixer_usb_gray.xml
 vendor/etc/LVACFS_Configuration.txt
 vendor/etc/plmn_delta_usagsm.bin
--vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml
--vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi@2.0-service.xml
 -vendor/etc/vintf/manifest/android.hardware.health@2.1-samsung.xml
 -vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.tima@1.0-manifest.xml
 -vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
@@ -872,14 +861,12 @@ vendor/etc/init/init.time_daemon.rc
 vendor/etc/init/vendor.samsung.hardware.hqm@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.vibrator@2.1-service.rc
 vendor/etc/init/vendor.qti.hardware.iop@2.0-service.rc
-vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
 vendor/etc/init/netmgrd.rc
 vendor/etc/init/vendor.samsung.hardware.security.hdcp.keyprovisioning@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.servicetracker@1.2-service.rc
 vendor/etc/init/vendor.samsung.hardware.authfw@1.0-service.rc
 vendor/etc/init/vendor.qti.tftp.rc
 vendor/etc/init/vendor.samsung.hardware.sysinput@1.0-service.rc
-vendor/etc/init/wifi_brcm.rc
 vendor/etc/init/ipa_fws.rc
 vendor/etc/init/vendor.display.color@1.0-service.rc
 vendor/etc/init/vendor.qti.adsprpc-service.rc
@@ -889,8 +876,6 @@ vendor/etc/init/vaultkeeper_common.rc
 vendor/etc/init/dataadpl.rc
 vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
-vendor/etc/init/vendor.sensors.sscrpcd.rc
-vendor/etc/init/init.vendor.sensors.rc
 vendor/etc/init/emservice.rc
 vendor/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
@@ -913,7 +898,6 @@ vendor/etc/init/init.spdaemon_wait_spunvm.rc
 vendor/etc/init/vendor.samsung.hardware.security.drk@2.0-service.rc
 vendor/etc/init/vendor.qti.cdsprpc-service.rc
 vendor/etc/init/nxp.android.hardware.nfc@1.2-service.rc
-vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc
 vendor/etc/init/icd_over_five_vendor.rc
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/init/qdcmss.rc
@@ -924,55 +908,6 @@ vendor/etc/init/android.hardware.usb@1.1-service.wahoo.rc
 vendor/bin/hw/android.hardware.usb@1.1-service.wahoo
 vendor/etc/mixer_paths_cdp.xml
 vendor/etc/somxreg.conf
-vendor/etc/sensors/sns_reg_config
-vendor/etc/sensors/hals.conf
-vendor/etc/sensors/config/kona_tmd4907_0.json
-vendor/etc/sensors/config/lps22hh_0.json
-vendor/etc/sensors/config/sns_amd.json
-vendor/etc/sensors/config/kona_qrd_lsm6dso_0.json
-vendor/etc/sensors/config/sns_device_orient.json
-vendor/etc/sensors/config/sns_fmv.json
-vendor/etc/sensors/config/pah_8011_0_platform.ppg_enable_ex_1.json
-vendor/etc/sensors/config/kona_lsm6dso_0_7.json
-vendor/etc/sensors/config/sns_tilt_sw_disabled.json
-vendor/etc/sensors/config/kona_ak991x_8.json
-vendor/etc/sensors/config/sns_wrist_pedo.json
-vendor/etc/sensors/config/ak991x_dri_0.json
-vendor/etc/sensors/config/sns_aont.json
-vendor/etc/sensors/config/sns_tilt_to_wake.json
-vendor/etc/sensors/config/sns_dpc.json
-vendor/etc/sensors/config/kona_lsm6dso_0_0.json
-vendor/etc/sensors/config/sns_cm.json
-vendor/etc/sensors/config/sns_tilt.json
-vendor/etc/sensors/config/sns_diag_filter.json
-vendor/etc/sensors/config/sns_rotv.json
-vendor/etc/sensors/config/lsm6dso_0.json
-vendor/etc/sensors/config/kona_ak991x_7.json
-vendor/etc/sensors/config/pah_8011_0_platform.ppg_enable_ex_2.json
-vendor/etc/sensors/config/sns_facing.json
-vendor/etc/sensors/config/lsm6dso_0_8g.json
-vendor/etc/sensors/config/sns_basic_gestures.json
-vendor/etc/sensors/config/sns_hw_revision.json
-vendor/etc/sensors/config/sns_geomag_rv.json
-vendor/etc/sensors/config/sns_smd.json
-vendor/etc/sensors/config/sns_amd_sw_enabled.json
-vendor/etc/sensors/config/sns_tilt_sw_enabled.json
-vendor/etc/sensors/config/sns_gyro_cal.json
-vendor/etc/sensors/config/sns_dae.json
-vendor/etc/sensors/config/sns_mag_cal_legacy.json
-vendor/etc/sensors/config/sns_distance_bound.json
-vendor/etc/sensors/config/sns_mag_cal.json
-vendor/etc/sensors/config/sns_multishake.json
-vendor/etc/sensors/config/ak991x_polling_0.json
-vendor/etc/sensors/config/sns_ccd.json
-vendor/etc/sensors/config/kona_ak991x_0.json
-vendor/etc/sensors/config/sns_rmd.json
-vendor/etc/sensors/config/sns_bring_to_ear.json
-vendor/etc/sensors/config/kona_irq.json
-vendor/etc/sensors/config/kona_lps22hh_0.json
-vendor/etc/sensors/config/kona_default_sensors.json
-vendor/etc/sensors/config/sns_pedometer.json
-vendor/etc/sensors/config/sns_amd_sw_disabled.json
 vendor/etc/gnss_antenna_info.conf
 vendor/etc/sound_trigger_platform_info.xml
 vendor/etc/audio_effects_sec.xml
@@ -1086,9 +1021,7 @@ vendor/lib/libarcsoft_multi_frame_video_hdr.so
 vendor/lib/libloc_api_v02.so
 vendor/lib/libgcs.so
 vendor/lib/vendor.qti.gnss@1.1.so
-vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
 vendor/lib/libvppimmotion.so
-vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/libFace3DTA.so
 vendor/lib/libsecnativefeature.so
 vendor/lib/vendor.qti.hardware.iop@1.0.so
@@ -1132,7 +1065,6 @@ vendor/lib/libtriplecam_image_optical_zoom.so
 vendor/lib/libucm_tlc_tz_esecomm.so
 vendor/lib/lib_SoundAlive_AlbumArt_ver105.so
 vendor/lib/libizat_client_api.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib/libthirdparty_zoomtranslator_imp.so
 -vendor/lib/libthermalclient.so
 vendor/lib/libvicom.so
@@ -1192,7 +1124,6 @@ vendor/lib/libmm-color-convertor.so
 vendor/lib/libcapiv2vop.so
 vendor/lib/libPersonal_interface.so
 vendor/lib/libcamxswprocessalgo.so
-vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/libsomxadpcmd.so
 vendor/lib/libsdm-colormgr-algo.so
 vendor/lib/libmdmdetect.so
@@ -1202,7 +1133,6 @@ vendor/lib/hw/android.hardware.health@2.0-impl-2.1-samsung.so
 vendor/lib/hw/audio.sec_primary.default.so
 vendor/lib/hw/com.qti.chi.override.so
 vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so
-vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.samsung.hardware.gnss@2.0-impl-sec.so
 vendor/lib/hw/sound_trigger.primary.kona.so
 vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so
@@ -1213,11 +1143,9 @@ vendor/lib/hw/camera.qcom.so
 vendor/lib/hw/vendor.samsung.hardware.camera.provider@4.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.servicetracker@1.2-impl.so
-vendor/lib/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
 vendor/lib/hw/vulkan.adreno.so
 vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so
 vendor/lib/hw/vendor.samsung.hardware.snap@1.1-impl.so
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so
 vendor/lib/hw/vendor.qti.hardware.soter@1.0-impl.so
 vendor/lib/libcamxexternalformatutils.so
@@ -1562,7 +1490,6 @@ vendor/lib/libtrustedapploader.so
 vendor/lib/libhdcp2p2prov.so
 vendor/lib/libdualcam_refocus_video.so
 vendor/lib/com.qualcomm.qti.imscmservice@2.1.so
-vendor/lib/vendor.samsung.hardware.bluetooth.a2dpsink@1.0.so
 vendor/lib/libxml.so
 vendor/lib/libOpenCv.camera.samsung.so
 vendor/lib/libdualcam_refocus_image.so
@@ -1824,7 +1751,6 @@ vendor/bin/subsystem_ramdump
 vendor/bin/vendor.samsung.hardware.security.widevine.keyprov@1.0-service
 vendor/bin/hw/vendor.qti.hardware.servicetracker@1.2-service
 vendor/bin/hw/vendor.samsung.hardware.miscpower@2.0-service
-vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
 vendor/bin/hw/vendor.samsung.hardware.sysinput@1.0-service
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
@@ -1863,13 +1789,11 @@ vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.tlc.hdm@1.1-service
 vendor/bin/hw/android.hardware.keymaster@4.0-strongbox-service-qti
 vendor/bin/hw/vendor.samsung.hardware.tlc.iccc@1.0-service
-vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service
 vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
 vendor/bin/ssgtzd
 vendor/bin/netmgrd
 vendor/bin/factory.ssc
 vendor/bin/rmt_storage
-vendor/bin/sscrpcd
 vendor/bin/adpl
 vendor/bin/emservice
 vendor/bin/diag_callback_sample
@@ -1918,11 +1842,66 @@ vendor/bin/vendor.qti.hardware.soter@1.0-provision
 vendor/bin/npu_launcher
 vendor/bin/vendor.samsung.hardware.security.wsm@1.0-service
 
+# bluetooth
+vendor/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
+vendor/lib64/libbluetooth_audio_session_qti.so
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
+vendor/lib64/hw/audio.bluetooth_qti.default.so
+vendor/lib64/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
+vendor/etc/audconf/OPEN/Bluetooth_cal.acdb
+vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
+vendor/lib/libbluetooth_audio_session_qti.so
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
+vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
+vendor/lib/hw/audio.bluetooth_qti.default.so
+vendor/lib/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
+vendor/etc/init/android.hardware.bluetooth@1.0-service.rc
+vendor/lib/vendor.samsung.hardware.bluetooth.a2dpsink@1.0.so
+vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
+vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
+vendor/bin/hw/android.hardware.bluetooth@1.0-service
+vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
+vendor/lib/hw/audio.bluetooth.default.so
+vendor/lib/libbluetooth_audio_session.so
+vendor/lib/vendor.qti.hardware.bluetooth_audio@2.0.so
+vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl.so
+vendor/lib64/hw/audio.bluetooth.default.so
+vendor/lib64/libbluetooth_audio_session.so
+vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so
+vendor/lib64/libchrome.so
 
+# audio
+vendor/lib/libaudiofoundation.so
+vendor/lib/libcodec2_hidl@1.1.so
+vendor/lib/libcodec2_simple_component.so
+vendor/lib/libcodec2_soft_ac4dec.so
+vendor/lib/libcodec2_soft_common.so
+vendor/lib/libsfplugin_ccodec_utils.so
+vendor/lib/libstagefright_bufferqueue_helper_vendor.so
+vendor/lib/libstagefright_omx_vendor.so
+vendor/lib/libstagefright_soft_ac4dec.so
+vendor/lib/libstagefright_soft_ddpdec.so
+vendor/lib/libstagefright_soft_qtiflacdec.so
+vendor/lib64/libaudiofoundation.so
+vendor/lib64/libcodec2_hidl@1.1.so
+vendor/lib64/libcodec2_simple_component.so
+vendor/lib64/libcodec2_soft_common.so
+vendor/lib64/libsfplugin_ccodec_utils.so
+vendor/lib64/libstagefright_flacdec.so
+vendor/lib64/libstagefright_soft_qtiflacdec.so
+vendor/lib64/libstagefright_softomx.so
+vendor/lib64/vndk/libstagefright_foundation.so
+vendor/lib/vndk/libstagefright_foundation.so
 
 # samsung camera
-# vendor/lib64/libsensorndkbridge.so
-# vendor/lib/libsensorndkbridge.so
+vendor/etc/init/vendor.samsung.hardware.camera.provider@4.0-service_64.rc
+vendor/etc/init/vendor.samsung.hardware.media.converter@1.0-service.rc
+
 # system/bin/mafpc_write
 # system/bin/sswap
 # system/lib/vendor.samsung.hardware.camera.provider@4.0.so
@@ -2064,6 +2043,7 @@ vendor/lib/hw/com.qti.chi.override.so
 
 
 #ril
+vendor/etc/init/ipacm.rc
 system_ext/framework/qcrilhook.jar
 system_ext/framework/oat/arm/qcrilhook.vdex
 system_ext/framework/oat/arm/qcrilhook.odex
@@ -2124,6 +2104,10 @@ vendor/lib/librilqmiservices-ext.so
 vendor/lib/libsecril-client.so
 vendor/lib/libsec-ril.so
 vendor/lib/libsec_semRil.so
+vendor/lib/libreference-ril.so
+vendor/lib/librilutils.so
+vendor/lib64/libreference-ril.so
+vendor/lib64/librilutils.so
 
 
 vendor/lib/vendor.samsung.hardware.radio.channel@2.0.so
@@ -2187,11 +2171,11 @@ vendor/etc/media_codecs_google_video.xml
 odm/etc/media_profiles_V1_0.xml
 
 # nfc
-# vendor/etc/init/android.hardware.secure_element@1.1-service.rc
-# vendor/bin/hw/android.hardware.secure_element@1.1-service
+vendor/etc/init/android.hardware.secure_element@1.1-service.rc
+vendor/bin/hw/android.hardware.secure_element@1.1-service
 -vendor/etc/vintf/manifest/nxp.android.hardware.nfc@1.2-service.xml
 vendor/bin/hw/nxp.android.hardware.nfc@1.2-service
-# vendor/lib64/ese_spi_nxp.so
+vendor/lib64/ese_spi_nxp.so
 
 vendor/lib/libsns_fastRPC_util.so
 vendor/lib64/libsns_fastRPC_util.so
@@ -2199,15 +2183,26 @@ vendor/lib64/libsns_fastRPC_util.so
 vendor/lib/libtinyxml2_1.so
 vendor/lib64/libtinyxml2_1.so
 
-# vendor/lib/libsensorndkbridge.so
-# vendor/lib64/libsensorndkbridge.so
-
 # misc configs
 vendor/etc/sec_config
 vendor/etc/sec_config_oem
 
+# keymaster/gatekeeper
+vendor/etc/init/android.hardware.keymaster@4.0-service.rc
+vendor/bin/hw/android.hardware.gatekeeper@1.0-service
+vendor/lib64/android.hardware.gatekeeper@1.0-impl.so
+vendor/lib/android.hardware.gatekeeper@1.0-impl.so
+vendor/bin/hw/android.hardware.keymaster@4.0-service
+vendor/lib64/libkeymaster4.so
+vendor/lib64/libkeymaster4_1support.so
+vendor/lib64/libkeymaster4support.so
+vendor/lib64/libkeymaster_messages.so
+vendor/lib64/libkeymaster_portable.so
+vendor/lib64/libpuresoftkeymasterdevice.so
 
 # display
+vendor/etc/init/vendor.qti.hardware.display.composer-service.rc
+
 # vendor/bin/hw/android.hardware.media.omx@1.0-service
 # vendor/etc/init/android.hardware.media.omx@1.0-service.rc
 
@@ -2274,14 +2269,117 @@ vendor/etc/sec_config_oem
 # vendor/lib64/vendor.qti.hardware.display.mapperextensions@1.1.so
 
 # power
-# -vendor/etc/vintf/manifest/power-samsung.xml
-# disabled
-# vendor/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc
+-vendor/etc/vintf/manifest/power-samsung.xml
+vendor/etc/init/vendor.samsung.hardware.miscpower@2.0-service.rc
 vendor/bin/hw/android.hardware.power.samsung-service
 vendor/lib64/vendor.samsung.hardware.miscpower@2.0.so
 vendor/etc/powerhint.xml
 vendor/etc/sensors/config/kona_power_0.json
 system_ext/etc/init/perfservice.rc
 system_ext/bin/perfservice
+system_ext/etc/seccomp_policy/perfservice.policy
 system/lib64/vendor.samsung.hardware.miscpower@2.0.so
 system/lib/vendor.samsung.hardware.miscpower@2.0.so
+vendor/etc/init/vendor.qti.hardware.perf@2.2-service.rc
+vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
+vendor/lib64/libqti-perfd-client.so
+vendor/lib/hw/power.default.so
+vendor/lib64/hw/power.default.so
+vendor/lib/vendor.qti.hardware.perf@2.0.so
+vendor/lib/vendor.qti.hardware.perf@2.1.so
+vendor/lib/vendor.qti.hardware.perf@2.2.so
+vendor/lib64/vendor.qti.hardware.perf@2.0.so
+vendor/lib64/vendor.qti.hardware.perf@2.1.so
+vendor/lib64/vendor.qti.hardware.perf@2.2.so
+
+# sensors
+-vendor/etc/vintf/manifest/android.hardware.sensors@2.0-multihal.xml
+vendor/etc/init/android.hardware.sensors@2.0-service-multihal.rc
+vendor/bin/hw/android.hardware.sensors@2.0-service.multihal
+vendor/lib/libsensorndkbridge.so
+vendor/lib64/libsensorndkbridge.so
+vendor/lib/libqservice.so
+vendor/lib/libsensorlistener.so
+vendor/lib/libsensorslog.so
+vendor/lib/libqdutils.so
+vendor/lib64/libqservice.so
+vendor/lib64/libqdutils.so
+vendor/lib64/libsensorlistener.so
+vendor/lib64/libsensorslog.so
+vendor/lib/android.hardware.sensors@2.0-ScopedWakelock.so
+vendor/lib64/android.hardware.sensors@2.0-ScopedWakelock.so
+vendor/etc/sensors/sns_reg_config
+vendor/etc/sensors/hals.conf
+vendor/etc/sensors/config/kona_tmd4907_0.json
+vendor/etc/sensors/config/lps22hh_0.json
+vendor/etc/sensors/config/sns_amd.json
+vendor/etc/sensors/config/kona_qrd_lsm6dso_0.json
+vendor/etc/sensors/config/sns_device_orient.json
+vendor/etc/sensors/config/sns_fmv.json
+vendor/etc/sensors/config/pah_8011_0_platform.ppg_enable_ex_1.json
+vendor/etc/sensors/config/kona_lsm6dso_0_7.json
+vendor/etc/sensors/config/sns_tilt_sw_disabled.json
+vendor/etc/sensors/config/kona_ak991x_8.json
+vendor/etc/sensors/config/sns_wrist_pedo.json
+vendor/etc/sensors/config/ak991x_dri_0.json
+vendor/etc/sensors/config/sns_aont.json
+vendor/etc/sensors/config/sns_tilt_to_wake.json
+vendor/etc/sensors/config/sns_dpc.json
+vendor/etc/sensors/config/kona_lsm6dso_0_0.json
+vendor/etc/sensors/config/sns_cm.json
+vendor/etc/sensors/config/sns_tilt.json
+vendor/etc/sensors/config/sns_diag_filter.json
+vendor/etc/sensors/config/sns_rotv.json
+vendor/etc/sensors/config/lsm6dso_0.json
+vendor/etc/sensors/config/kona_ak991x_7.json
+vendor/etc/sensors/config/pah_8011_0_platform.ppg_enable_ex_2.json
+vendor/etc/sensors/config/sns_facing.json
+vendor/etc/sensors/config/lsm6dso_0_8g.json
+vendor/etc/sensors/config/sns_basic_gestures.json
+vendor/etc/sensors/config/sns_hw_revision.json
+vendor/etc/sensors/config/sns_geomag_rv.json
+vendor/etc/sensors/config/sns_smd.json
+vendor/etc/sensors/config/sns_amd_sw_enabled.json
+vendor/etc/sensors/config/sns_tilt_sw_enabled.json
+vendor/etc/sensors/config/sns_gyro_cal.json
+vendor/etc/sensors/config/sns_dae.json
+vendor/etc/sensors/config/sns_mag_cal_legacy.json
+vendor/etc/sensors/config/sns_distance_bound.json
+vendor/etc/sensors/config/sns_mag_cal.json
+vendor/etc/sensors/config/sns_multishake.json
+vendor/etc/sensors/config/ak991x_polling_0.json
+vendor/etc/sensors/config/sns_ccd.json
+vendor/etc/sensors/config/kona_ak991x_0.json
+vendor/etc/sensors/config/sns_rmd.json
+vendor/etc/sensors/config/sns_bring_to_ear.json
+vendor/etc/sensors/config/kona_irq.json
+vendor/etc/sensors/config/kona_lps22hh_0.json
+vendor/etc/sensors/config/kona_default_sensors.json
+vendor/etc/sensors/config/sns_pedometer.json
+vendor/etc/sensors/config/sns_amd_sw_disabled.json
+
+vendor/etc/init/vendor.sensors.sscrpcd.rc
+vendor/etc/init/init.vendor.sensors.rc
+vendor/bin/sscrpcd
+
+# wifi
+
+-vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi.hostapd.xml
+-vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi@2.0-service.xml
+vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service
+vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc
+vendor/etc/init/hostapd.android.rc
+vendor/etc/init/wifi_brcm.rc
+vendor/etc/init/android.hardware.wifi.supplicant-service.rc
+vendor/etc/IPACM_cfg.xml
+vendor/etc/wifi/wpa_supplicant.conf
+vendor/bin/hw/android.hardware.wifi@1.0-service
+vendor/lib/libwifi-hal.so
+vendor/lib64/libkeystore-engine-wifi-hidl.so
+vendor/lib64/libkeystore-wifi-hidl.so
+vendor/lib64/libwifi-hal.so
+vendor/bin/hw/wpa_supplicant
+vendor/bin/wpa_cli
+vendor/lib/libwpa_client.so
+vendor/lib64/libwpa_client.so
+vendor/bin/hostapd_cli

@@ -454,14 +454,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0 \
     android.hardware.secure_element@1.1 \
-    ese_spi_nxp-sm8250 \
-    vendor.nxp.nxpese@1.0 \
-    vendor.nxp.nxpnfc@1.0 \
     libchrome.vendor \
     libnfc-nci \
-    libnfc_nci_jni \
-    android.hardware.secure_element@1.1-service-sm8250 \
-    android.hardware.secure_element@1.1-service-sm8250.rc
+    libnfc_nci_jni
 
 # OMX
 PRODUCT_PACKAGES += \
@@ -510,12 +505,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.perf@2.1.vendor \
     vendor.qti.hardware.perf@2.2.vendor \
     vendor.qti.hardware.perf@2.2
-
-
-    # android.hardware.power@1.2-service-qti \
-# PRODUCT_COPY_FILES += \
-#     $(LOCAL_PATH)/configs/powerhint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.xml
-
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -570,13 +559,9 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    libsensorndkbridge \
     android.hardware.sensors@1.0 \
     android.hardware.sensors@2.0 \
     android.hardware.sensors@2.1 \
-    android.hardware.sensors@2.0-multihal \
-    android.hardware.sensors@2.0-service.multihal \
-    android.hardware.sensors@1.0-impl.samsung-sm8250 \
     android.hardware.sensors@2.0-ScopedWakelock
 
 # Servicetracker
