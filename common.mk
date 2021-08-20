@@ -79,6 +79,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.proximity.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.proximity.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepcounter.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepcounter.xml \
     frameworks/native/data/etc/android.hardware.sensor.stepdetector.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.stepdetector.xml \
+    frameworks/native/data/etc/android.hardware.sensor.hifi_sensors.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.hifi_sensors.xml \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.cdma.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
     frameworks/native/data/etc/android.hardware.telephony.ims.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.ims.xml \
@@ -145,7 +146,6 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.1-impl \
     android.hardware.soundtrigger@2.2-impl \
     android.hardware.soundtrigger@2.3-impl \
-    audio.a2dp.default \
     audio.primary.kona \
     audio.r_submix.default \
     audio.usb.default \
@@ -201,25 +201,6 @@ PRODUCT_PACKAGES += \
     android.hardware.automotive.vehicle@2.0 \
     android.hardware.automotive.vehicle@2.0-manager-lib
 
-# Biometrics
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.face@1.0
-
-# Bluetooth
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0-service \
-    android.hardware.bluetooth@1.0-impl \
-    android.hardware.bluetooth.audio@2.0-impl \
-    android.hardware.bluetooth.audio@2.0-impl:32 \
-    audio.bluetooth.default \
-    bt_configstore.conf \
-    com.qualcomm.qti.bluetooth_audio@1.0 \
-    com.qualcomm.qti.bluetooth_audio@1.0:32 \
-    liba2dpoffload \
-    libbtconfigstore \
-    vendor.qti.hardware.bluetooth_audio@2.0.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -380,9 +361,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1-service.samsung \
-    fingerprint.default \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.samsung
+    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.samsung-sm8250
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -428,11 +407,6 @@ PRODUCT_PACKAGES += \
     android.hardware.light@2.0 \
     lights.kona
 
-# LiveDisplay
-# PRODUCT_PACKAGES += \
-#     vendor.lineage.livedisplay@2.0-service.samsung-qcom
-
-# Media
 
 PRODUCT_PACKAGES += \
     libavservices_minijail \
@@ -444,12 +418,15 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 # NFC
-# PRODUCT_PACKAGES += \
-#     com.android.nfc_extras \
-#     libnfc-nci \
-#     libnfc_nci_jni \
-#     NfcNci \
-#     Tag
+PRODUCT_PACKAGES += \
+    libnfc-nci \
+    libnfc_nci_jni \
+    NfcNci \
+    Tag
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/libnfc-nci.conf:system/etc/libnfc-nci.conf
+
 
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.0 \
@@ -495,16 +472,7 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.samsung-libperfmgr-sm8250 \
-    libperfmgr.vendor \
-    android.hardware.power@1.0 \
-    android.hardware.power@1.1 \
-    android.hardware.power@1.2 \
-    android.hardware.power@1.3 \
-    vendor.qti.hardware.perf@2.0.vendor \
-    vendor.qti.hardware.perf@2.1.vendor \
-    vendor.qti.hardware.perf@2.2.vendor \
-    vendor.qti.hardware.perf@2.2
+    android.hardware.power@1.3-service.samsung-sm8250
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -521,7 +489,7 @@ PRODUCT_PACKAGES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-     libjson \
+    libjson \
     libqti_vndfwk_detect \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
@@ -559,10 +527,7 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0 \
-    android.hardware.sensors@2.0 \
-    android.hardware.sensors@2.1 \
-    android.hardware.sensors@2.0-ScopedWakelock
+    android.hardware.sensors@1.0-impl.samsung-sm8250
 
 # Servicetracker
 PRODUCT_PACKAGES += \

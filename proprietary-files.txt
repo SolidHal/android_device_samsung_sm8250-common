@@ -120,7 +120,6 @@ vendor/lib64/libkeymasterdeviceutils.so
 vendor/bin/keymasterd
 vendor/lib64/libHMT.so
 vendor/lib64/libaudioparsers.so
-vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib64/libperipheral_client.so
 vendor/lib64/liblivefocus_preview_interface.so
 vendor/lib64/vendor.qti.hardware.data.latency@1.0.so
@@ -483,7 +482,6 @@ vendor/lib64/libOmxAacDec.so
 vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so
 vendor/lib64/libbthost_if.so
 vendor/lib64/libadiertac.so
-vendor/lib64/libbtnv.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libhyper.so
 vendor/lib64/libGPreqcancel_svc.so
@@ -604,7 +602,6 @@ vendor/lib64/libsecfr_engine.so
 vendor/lib64/libkeymaster_helper.so
 vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 vendor/lib64/libqti-iopd-client.so
-vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
 vendor/lib64/liblocationservice_glue.so
 vendor/lib64/libbatching.so
 vendor/lib64/vendor.samsung.hardware.tlc.hdm@1.1-impl.so
@@ -793,14 +790,12 @@ vendor/etc/saiv/ld/avg_hog_13pt.dat
 vendor/etc/saiv/ld/avg_hog_35pt.dat
 vendor/etc/saiv/ld/regress_matrix_short_13pt.dat
 vendor/etc/saiv/fd/fast_face_detect_model_full_angle_16_CHAR.dat
-vendor/etc/audio_platform_info_intcodec.xml
 vendor/etc/audio_policy_configuration.xml
 vendor/etc/wlan_common_rc
 vendor/etc/locale/plmn_delta_eng.bin
 vendor/etc/locale/plmn_delta_zh-rTW.bin
 vendor/etc/locale/plmn_delta_zh-rHK.bin
 vendor/etc/locale/plmn_delta_zh-rCN.bin
-vendor/etc/sound_trigger_mixer_paths.xml
 vendor/etc/wifi/indoorchannel.info
 vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf
 vendor/etc/audio_tuning_mixer.txt
@@ -879,7 +874,6 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/etc/init/emservice.rc
 vendor/etc/init/android.hardware.keymaster@4.0-strongbox-service-qti.rc
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc
 vendor/etc/init/power-default-sec.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/qseecomd.rc
@@ -914,7 +908,6 @@ vendor/etc/audio_effects_sec.xml
 vendor/etc/inpainting/db/inpainting.dlc
 vendor/etc/adreno_bb.bin
 vendor/etc/audio_configs_stock.xml
-vendor/etc/a2dp_audio_policy_configuration.xml
 vendor/etc/libnfc-mtp-SN100.conf
 vendor/etc/system_properties.xml
 vendor/etc/audio_effects_common.conf
@@ -1092,7 +1085,6 @@ vendor/lib/libconfigdb.so
 vendor/lib/libkeymasterdeviceutils.so
 vendor/lib/libHMT.so
 vendor/lib/libaudioparsers.so
-vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
 vendor/lib/libperipheral_client.so
 vendor/lib/liblivefocus_preview_interface.so
 vendor/lib/libsdynatm.so
@@ -1424,7 +1416,6 @@ vendor/lib/libOmxAacDec.so
 vendor/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so
 vendor/lib/libbthost_if.so
 vendor/lib/libadiertac.so
-vendor/lib/libbtnv.so
 vendor/lib/libcamera_nn_stub.so
 vendor/lib/libGPreqcancel_svc.so
 vendor/lib/vendor.qti.hardware.tui_comm@1.0.so
@@ -1755,7 +1746,6 @@ vendor/bin/hw/vendor.samsung.hardware.sysinput@1.0-service
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/bin/hw/vendor.samsung.hardware.tlc.ucm@2.0-service
-vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service
 vendor/bin/hw/capabilityconfigstoretest
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.hqm@1.0-service
@@ -1843,6 +1833,10 @@ vendor/bin/npu_launcher
 vendor/bin/vendor.samsung.hardware.security.wsm@1.0-service
 
 # bluetooth
+vendor/lib64/libbtnv.so
+vendor/lib/libbtnv.so
+vendor/etc/audio_platform_info_intcodec.xml
+vendor/etc/a2dp_audio_policy_configuration.xml
 vendor/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
@@ -1858,6 +1852,7 @@ vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
 vendor/lib/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
+vendor/lib/liba2dpoffload.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/etc/init/android.hardware.bluetooth@1.0-service.rc
 vendor/lib/vendor.samsung.hardware.bluetooth.a2dpsink@1.0.so
@@ -1874,6 +1869,16 @@ vendor/lib64/hw/audio.bluetooth.default.so
 vendor/lib64/libbluetooth_audio_session.so
 vendor/lib64/vendor.qti.hardware.bluetooth_audio@2.0.so
 vendor/lib64/libchrome.so
+vendor/lib/vendor.qti.hardware.btconfigstore@1.0.so
+vendor/lib/vendor.qti.hardware.btconfigstore@2.0.so
+vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so
+vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so
+system/lib64/libaptX_encoder.so
+system/lib64/libaptXHD_encoder.so
+system/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
+system/lib64/vendor.samsung.hardware.bluetooth.a2dpsink@1.0.so
+system/etc/bluetooth/bt_stack.conf
+system/etc/bluetooth/bt_did.conf
 
 # audio
 vendor/lib/libaudiofoundation.so
@@ -2383,3 +2388,12 @@ vendor/bin/wpa_cli
 vendor/lib/libwpa_client.so
 vendor/lib64/libwpa_client.so
 vendor/bin/hostapd_cli
+
+# fingerprint
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint@3.0.so
+vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint@3.0-service.rc
+vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
+vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint@3.0-service
+vendor/lib/hw/fingerprint.default.so
+vendor/lib64/hw/fingerprint.default.so
