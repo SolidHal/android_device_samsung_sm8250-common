@@ -480,7 +480,6 @@ vendor/lib64/libsnap_compute_wrapper.so
 vendor/lib64/libOmxQcelp13Dec.so
 vendor/lib64/libOmxAacDec.so
 vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so
-vendor/lib64/libbthost_if.so
 vendor/lib64/libadiertac.so
 vendor/lib64/libcamera_nn_stub.so
 vendor/lib64/libhyper.so
@@ -1414,7 +1413,6 @@ vendor/lib/libsnamrnb.so
 vendor/lib/libOmxQcelp13Dec.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so
-vendor/lib/libbthost_if.so
 vendor/lib/libadiertac.so
 vendor/lib/libcamera_nn_stub.so
 vendor/lib/libGPreqcancel_svc.so
@@ -1837,25 +1835,20 @@ vendor/lib64/libbtnv.so
 vendor/lib/libbtnv.so
 vendor/etc/audio_platform_info_intcodec.xml
 vendor/etc/a2dp_audio_policy_configuration.xml
-vendor/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/hw/audio.bluetooth_qti.default.so
-vendor/lib64/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
 vendor/etc/audconf/OPEN/Bluetooth_cal.acdb
-vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
 vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib/hw/audio.bluetooth_qti.default.so
-vendor/lib/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
 vendor/lib/liba2dpoffload.so
 vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/etc/init/android.hardware.bluetooth@1.0-service.rc
-vendor/lib/vendor.samsung.hardware.bluetooth.a2dpsink@1.0.so
 vendor/lib/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/lib64/com.qualcomm.qti.bluetooth_audio@1.0.so
 vendor/bin/hw/android.hardware.bluetooth@1.0-service
@@ -1876,9 +1869,35 @@ vendor/lib64/vendor.qti.hardware.btconfigstore@2.0.so
 system/lib64/libaptX_encoder.so
 system/lib64/libaptXHD_encoder.so
 system/lib64/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
+vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
 system/lib64/vendor.samsung.hardware.bluetooth.a2dpsink@1.0.so
+vendor/lib/vendor.samsung.hardware.bluetooth.a2dpsink@1.0.so
+vendor/lib/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
+vendor/lib64/hw/vendor.samsung.hardware.bluetooth.a2dp@1.0-impl.so
 system/etc/bluetooth/bt_stack.conf
 system/etc/bluetooth/bt_did.conf
+system/etc/bluetooth/iop_bt.db
+vendor/lib64/libbthost_if.so
+vendor/lib/libbthost_if.so
+
+# tried to get a2dp hardware offloading to work, but could not
+# needed samsungs libbluetooth, and all of these libs to support it
+# system/lib64/libbluetooth.so
+# system/lib64/libchrome.so
+# system/lib64/libbluetooth_jni.so
+# system/lib64/libbt-iopdb.so
+# system/lib64/libbt-iopdb_mod.so
+# system/lib64/libvkmanager.so
+# system/lib64/libsecure_storage.so
+# system/lib/libsecure_storage.so
+# system/lib/libvkmanager.so
+# system/lib64/libbt-iopdb_mod.so
+# system/lib64/libedmnativehelper.so
+# system/lib/libedmnativehelper.so
+# yeah, we really need the system vaulkeeper lib for samsungs libbluetooth.
+# without this we would have to disable a2dp offload
+# system/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so
+# system/lib/vendor.samsung.hardware.security.vaultkeeper@2.0.so
 
 # audio
 vendor/lib/libaudiofoundation.so
