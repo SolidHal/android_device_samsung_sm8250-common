@@ -495,12 +495,6 @@ PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti \
     libvndfwk_detect_jni.qti.vendor
 
-# RCS
-PRODUCT_PACKAGES += \
-    com.android.ims.rcsmanager \
-    PresencePolling \
-    RcsService
-
 # RenderScript HAL
 PRODUCT_PACKAGES += \
     android.hardware.renderscript@1.0-impl
@@ -553,6 +547,9 @@ PRODUCT_BOOT_JARS += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti.xml
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/broadcast_allowlist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/broadcast_allowlist.xml
 
 # Thermal
 PRODUCT_PACKAGES += \

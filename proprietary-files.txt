@@ -2139,6 +2139,41 @@ vendor/lib/vendor.samsung.hardware.radio@2.0.so
 vendor/lib/vendor.samsung.hardware.radio@2.1.so
 vendor/lib/vendor.samsung.hardware.radio.bridge@2.0.so
 
+system/bin/imsd
+system/etc/init/imsd.rc
+system/etc/permissions/privapp_whitelist_com.sec.imsservice.xml
+system/etc/permissions/imsmanager_library.xml
+system/etc/permissions/privapp-permissions-com.sec.imslogger.xml
+system/etc/permissions/vsimservice_library.xml
+-system/priv-app/imsservice/imsservice.apk
+system/priv-app/imsservice/lib/arm64/libsec-ims.so
+system_ext/lib64/vendor.qti.ims.factory@1.0.so
+system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
+system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so
+system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so
+system_ext/lib64/vendor.qti.ims.factory@1.1.so
+system_ext/framework/vendor.qti.ims.factory-V1.1-java.jar
+system_ext/framework/vendor.qti.ims.rcsconfig-V1.1-java.jar
+system_ext/framework/uimservicelibrary.jar
+system_ext/framework/oat/arm/vendor.qti.ims.rcsconfig-V1.0-java.odex
+system_ext/framework/oat/arm/vendor.qti.ims.rcsconfig-V1.0-java.vdex
+system_ext/framework/oat/arm/vendor.qti.ims.rcsconfig-V1.1-java.odex
+system_ext/framework/oat/arm/vendor.qti.ims.rcsconfig-V1.1-java.vdex
+system_ext/framework/oat/arm64/vendor.qti.ims.rcsconfig-V1.0-java.odex
+system_ext/framework/oat/arm64/vendor.qti.ims.rcsconfig-V1.0-java.vdex
+system_ext/framework/oat/arm64/vendor.qti.ims.rcsconfig-V1.1-java.odex
+system_ext/framework/oat/arm64/vendor.qti.ims.rcsconfig-V1.1-java.vdex
+system_ext/framework/vendor.qti.ims.rcsconfig-V1.0-java.jar
+system_ext/framework/vendor.qti.ims.factory-V1.0-java.jar
+system_ext/lib/vendor.qti.ims.factory@1.0.so
+system_ext/lib/vendor.qti.imsrtpservice@3.0.so
+system_ext/lib/vendor.qti.ims.rcsconfig@1.0.so
+system_ext/lib/vendor.qti.ims.rcsconfig@1.1.so
+system_ext/lib/vendor.qti.ims.factory@1.1.so
+system/lib64/libsec-ims.so
+system/lib64/libresampler_ims.so
+system/framework/imsmanager.jar
+
 
 # audio
 vendor/etc/audio_configs.xml

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<allowlist>
+    <intent action="android.intent.action.BOOT_COMPLETED">
+        <package name="com.sec.imsservice"/>
+    </intent>
+
+    <allowed-packages>
+        <!-- android & google -->
+        <package name="android"/>
+        <package name="com.android.*"/>
+        <package name="com.google.*"/>
+    </allowed-packages>
+</allowlist>
