@@ -29,7 +29,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung/ril/libsecril-client \
     $(LOCAL_PATH)/power-libperfmgr \
     $(LOCAL_PATH)/libperfmgr \
-    vendor/qcom/opensource/interfaces/camera/postproc/1.0 \
+    vendor/qcom/opensource/interfaces/camera/postproc/1.0
 
 # Additional native libraries
 PRODUCT_COPY_FILES += \
@@ -41,6 +41,10 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay-lineage
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
+
+# samsung framework - required for imsservice.apk aka some telephony things
+# this jar is provided by the vendor package
+PRODUCT_BOOT_JARS += framework-samsung
 
 # VNDK
 PRODUCT_TARGET_VNDK_VERSION := 30
@@ -386,6 +390,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
 $(LOCAL_PATH)/configs/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
+# input
+PRODUCT_PACKAGES += \
+libjni_latinimegoogle
 
 # IPACM
 PRODUCT_PACKAGES += \
