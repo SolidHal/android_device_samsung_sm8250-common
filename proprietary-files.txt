@@ -2236,9 +2236,26 @@ system/etc/mapconprovider.xml
 # modified by us
 -system/framework/imsmanager.jar
 -system/priv-app/imsservice/imsservice.apk
+-system/priv-app/SecTelephonyProvider/SecTelephonyProvider.apk
 -system/app/MdecService/MdecService.apk
 # added/built by us
--system/framework/framework-samsung.jar 
+-system/framework/framework-samsung.jar
+
+
+# Telephony
+system_ext/framework/qti-telephony-hidl-wrapper.jar
+system_ext/framework/qti-telephony-utils.jar
+system/etc/permissions/qti_telephony_utils.xml
+system/etc/permissions/qti_telephony_hidl_wrapper.xml
+system_ext/framework/oat/arm/qti-telephony-hidl-wrapper.vdex
+system_ext/framework/oat/arm/qti-telephony-hidl-wrapper.odex
+system_ext/framework/oat/arm/qti-telephony-utils.vdex
+system_ext/framework/oat/arm/qti-telephony-utils.odex
+system_ext/framework/oat/arm64/qti-telephony-hidl-wrapper.vdex
+system_ext/framework/oat/arm64/qti-telephony-hidl-wrapper.odex
+system_ext/framework/oat/arm64/qti-telephony-utils.vdex
+system_ext/framework/oat/arm64/qti-telephony-utils.odex
+
 
 
 # audio
