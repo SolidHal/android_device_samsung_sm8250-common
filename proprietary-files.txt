@@ -2232,6 +2232,21 @@ system/framework/oat/arm64/semwifi-service.vdex
 system/lib64/libaresdns.so
 system/lib64/libcurl2.so
 system/etc/mapconprovider.xml
+system/bin/scs
+system/lib64/libvkmanager.so
+system/lib/libvkmanager.so
+system/lib64/vendor.samsung.hardware.security.vaultkeeper@2.0.so
+system/lib/vendor.samsung.hardware.security.vaultkeeper@2.0.so
+
+system/lib64/libatparser.so
+system/lib64/libomission_avoidance.so
+system/lib64/libfactoryutil.so
+system/bin/at_distributor
+system/bin/sec_diag_uart_log
+system/lib/libatparser.so
+system/lib/libomission_avoidance.so
+system/lib/libfactoryutil.so
+
 -system/app/SimMobilityKit/SimMobilityKit.apk
 # modified by us
 -system/framework/imsmanager.jar
