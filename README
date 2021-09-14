@@ -1,5 +1,8 @@
 Device configuration for Samsung devices with Snapdragon 865 SoC.
 
+NOTICE: after spending much time on this device I will no longer be making progress. 
+imsservice (required for cellular) requires a bunch of proprietary samsung garbage that they build into the standard system framework.jar and telephony-common.jar
+
 ---
 Copyright (C) 2020 Jesse Chan, The LineageOS Project <jc@lineageos.org>
 
